@@ -6,15 +6,27 @@ export class Home extends Component {
 
   render () {
     return (
-      <div class = "main">
-            <h1>The companion to your whiskey tasting needs.</h1>
-            <p>We'll help you:</p>
-        <ul>
-          <li>Discover the depth of flavor profiles</li>
-          <li>Gain insight into your favorite whiskey</li>
-          <li>Explore the cultured side to enjoying whiskey</li>
-        </ul>
-
+        <div class="main">
+            <div class="grid-container">
+                <div class="grid-item grid-item-1">
+                </div>
+                <div class="grid-item grid-item-2">
+                    <h1>The companion to your whiskey tasting needs</h1>
+                    <p1>We'll help you:</p1>
+                        <ul>
+                        <li>Discover the depth of flavor profiles</li>
+                        <li>Gain insight into your favorite whiskey</li>
+                        <li>Explore the cultured side to enjoying whiskey</li>
+                        </ul>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <p2>Stay tuned for updates to the site!</p2>
+                    <ul1>
+                        <li>Search for your favorite whiskey</li>
+                        <li>Detailed flavor analysis</li>
+                    </ul1>
+                </div>
+            </div>
       </div>
     );
   }
