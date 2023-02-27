@@ -34,7 +34,6 @@ export class Footer extends Component {
                     <div className="row">
                         <p className="col-sm">
                             &copy;{new Date().getFullYear()} WHISKEY SOMMELIER | All rights reserved |
-                            Terms Of Service | Privacy
                         </p>
                     </div>
                 </div>
