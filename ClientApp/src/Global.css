@@ -1,0 +1,28 @@
+﻿
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
+}
+
+.MainContainer {
+    min-width: 98vw;
+    min-height: 50vh;
+    background-color: whitesmoke;
+    opacity: 0.4;
+    color: black;
+    -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
+    -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
+    box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
+    border-radius: 5px;
+}
+
+.SecondaryContainer {
+    min-height: 60vh;
+}
+
+.NavBarContainer {
+    background-color: whitesmoke;
+    opacity: 0.4;
+}
