@@ -33,7 +33,7 @@ namespace WhiskeySommelier.Models
 
             modelBuilder.Entity<Bottle>(entity =>
             {
-                entity.HasNoKey();
+                // entity.HasNoKey();
 
                 entity.ToTable("bottle");
 

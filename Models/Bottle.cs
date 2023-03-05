@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -7,6 +8,7 @@ namespace WhiskeySommelier.Models
 {
     public partial class Bottle
     {
+        [Key]
         public string Name { get; set; }
         public string Distiller { get; set; }
         public byte? Age { get; set; }
