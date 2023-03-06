@@ -10,7 +10,7 @@
     min-width: 98vw;
     min-height: 50vh;
     background-color: whitesmoke;
-    opacity: 0.4;
+    opacity: 0.8;
     color: black;
     -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
     -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
@@ -24,5 +24,77 @@
 
 .NavBarContainer {
     background-color: whitesmoke;
-    opacity: 0.4;
+    opacity: 0.8;
+}
+.mainhome {
+    /*background-image: linear-gradient(to bottom right, #7b3f00, #836539);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;*/
+}
+
+.homeh1 {
+    color: #500000;
+    text-align: left;
+    /*margin-left: 1em;*/
+    padding-top: 0.55em;
+    padding-bottom: 0.55em;
+    /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.homep1 {
+    font-size: 2em;
+    padding-left: 10%;
+}
+
+.homep2 {
+    font-size: 1.5em;
+    padding-left: 5%;
+}
+
+.homeul {
+    padding-left: 18%;
+    font-size: 1.5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 900px 300px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "search intro update"
+        "search feature . "
+        "search feature . ";
+    row-gap: 75px;
+}
+
+.grid-item-2 {
+    /*border-style: solid;
+    border-width: 5px;
+    border-color: black; */
+}
+
+.grid-item-3 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding-left: 1em;
+}
+.grid-item-4{
+    
+}
+.grid-item-5{
+
+}
+table{
+    border: 2px solid;
+    border-radius: 5px;
+}
+th1{
+    font-size:2em;
 }
