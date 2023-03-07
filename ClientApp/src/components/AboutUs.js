@@ -8,11 +8,11 @@ export class AboutUs extends Component {
 
         return (
 
-            <div class main style={{ color: "Maroon", width: '700px', fontStyle: "oblique", textAlign: "center" }}>
-
+            //<div class main style={{ color: "Maroon", width: '700px', fontStyle: "oblique", textAlign: "center" }}>
+            <div class main>
                 <title ><b>About Us</b></title>
                 <br />
-                <h1 style={{ color: "red" }}>About Us</h1>
+                <h1>About Us</h1>
                 <br />
                 <p><b style={{ fontSize: '40px', color: 'orangered' }}>W</b>
                     elcome to the Whiskey Sommelier! This site is meant to be a companion for those who want to explore the world of whiskey.

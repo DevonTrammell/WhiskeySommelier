@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import "./home.css";
+//import "./home.css";
+import '../Global.css';
+
+
 
 export class Home extends Component {
   static displayName = Home.name;
