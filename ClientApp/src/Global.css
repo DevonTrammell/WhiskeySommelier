@@ -4,14 +4,14 @@
     height: 100vh;
     overflow-x: hidden;
    /* background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);*/
-   background-color: black;
-    
+    background-color: black;
 }
+
 
 .MainContainer {
     min-width: 98vw;
     min-height: 50vh;
-    background-color: black;
+    background-color: #21052E;
     opacity: 0.4;
     color: goldenrod;
     -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
@@ -30,10 +30,16 @@
     opacity: 0.4;
 }
 .main-footer {
-    color: darkgoldenrod;
+    color: #99741D;
     background-color: black;
     margin-top: -5px;
     position: relative;
     font-family: Didot, serif;
     width: 100%;
 }
+h1 {
+    color: #E0AA2B;
+    font-weight: bold;
+    font-family: Snell Roundhand, cursive;
+}
+    
