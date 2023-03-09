@@ -1,30 +1,32 @@
 ﻿
-#root {
+/*#root {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
-}
+    background-color: black;
+}*/
 
 .MainContainer {
-    min-width: 98vw;
-    min-height: 50vh;
-    background-color: whitesmoke;
-    opacity: 0.8;
-    color: black;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
+    opacity: 0.8;*/
+    color: goldenrod;
     -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
     -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
     box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
-    border-radius: 5px;
 }
 
 .SecondaryContainer {
     min-height: 60vh;
+    background-color: #1f1f1f;
 }
 
 .NavBarContainer {
-    background-color: whitesmoke;
-    opacity: 0.8;
+    background-color: black;
+
 }
 .mainhome {
     /*background-image: linear-gradient(to bottom right, #7b3f00, #836539);
@@ -34,14 +36,15 @@
 }
 
 .homeh1 {
-    color: #500000;
+    color: #E0AA2b;
     text-align: left;
     /*margin-left: 1em;*/
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
+    font-family: cursive;
     border-bottom-style: solid;
     border-width: 5px;
     border-color: black;
@@ -95,6 +98,39 @@ table{
     border: 2px solid;
     border-radius: 5px;
 }
-th1{
+h1{
     font-size:2em;
+    color: #E0AA2B;
+    font-weight: bold;
+    font-family: Snell Roundhand, cursive;
+}
+.main-footer {
+    color: #99741D;
+    background-color: black;
+    margin-top: -5px;
+    position: relative;
+    font-family: Didot, serif;
+    width: 100%;
+}
+.globalWrapper{
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1050px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.featuredTable{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+th1{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 5px;
 }

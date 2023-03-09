@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import "./Footer.css";
+import "../Global.css";
 
 export class Footer extends Component {
     static displayName = Footer.name;

@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-/*import "./home.css";*/
 
 export class Home extends Component {
-  static displayName = Home.name;
+    static displayName = Home.name;
 
- 
-  render () {
-      return (
+
+    render() {
+        return (
         <div class="mainhome">
             <div class="grid-container">
                 <div class="grid-item grid-item-1">
                 </div>
                 <div class="grid-item grid-item-2">
-                    <div class="homeh1">
-                        <h1>The companion to your whiskey tasting needs</h1>
-                    </div>
+                    <h1 class="h1">The companion to your whiskey tasting needs</h1>
                     <div class="homep1">
                         <p1>We'll help you:</p1>
                     </div>
@@ -40,6 +37,7 @@ export class Home extends Component {
                 <div class="grid-item grid-item-4">
                 </div>
                   <div class="grid-item grid-item-5">
+                      <div class="featuredTable">
                     <table>
                         <tr>
                             <th1>Featured Whiskey of the Day</th1>
@@ -48,12 +46,13 @@ export class Home extends Component {
                             <td>Picture goes here</td>
                             <td>Name of Whiskey goes here.</td>
                         </tr>
-                    </table>
+                          </table>
+                          </div>
                   </div>
 
 
             </div>
-      </div>
+                </div>
     );
   }
 }
