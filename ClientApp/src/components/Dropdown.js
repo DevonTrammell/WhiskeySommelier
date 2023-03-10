@@ -18,13 +18,7 @@ const CloseIcon = () => {
     );
 };
 
-const Dropdown = ({
-    placeHolder,
-    options,
-    isMulti,
-    isSearchable,
-    onChange
-}) => {
+const Dropdown = ({placeHolder, options, isMulti, isSearchable, onChange}) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState(isMulti ? [] : null);
     const [searchValue, setSearchValue] = useState("");
