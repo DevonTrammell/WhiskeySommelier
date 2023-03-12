@@ -191,7 +191,7 @@ const Dropdown = ({placeHolder, options, isMulti, isSearchable, onChange}) => {
                 <li>
                     <div className="fitler-list-item">
                         <div className="right-section">
-                            <button onClick={() => alert(filterValue) }>Results</button>
+                            <button>Results</button>
                         </div>
                     </div>
                 </li>
