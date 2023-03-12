@@ -8,11 +8,12 @@ export class AboutUs extends Component {
 
         return (
 
-                <div class main> 
+            <div class main>
+                <div class="aboutUsBackground">
                 <title ><b>About Us</b></title>
                 <br />
                 <div class="globalWrapper">
-                <h1 className="h1">About Us</h1>
+                <h1 className="homeh1">About Us</h1>
                 <br />
                 <p>
                     Welcome to the Whiskey Sommelier! This site is meant to be a companion for those who want to explore the world of whiskey.
@@ -45,6 +46,7 @@ export class AboutUs extends Component {
                     - The Whiskey Sommelier Team
                     </b>
                     </p>
+                    </div>
                     </div>
             </div>
         );

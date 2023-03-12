@@ -5,9 +5,10 @@ export class TastingIntro extends Component {
 
     render() {
         return (
-            <div>
+            <div class="tastingBackground">
                 <div class="globalWrapper">
-                <h1>Introduction to Whiskey Tasting</h1>
+                    <div class="tastingBackground2">
+                <h1 class="homeh1">Introduction to Whiskey Tasting</h1>
                 <p>If you're new to whiskey tasting, here's the info you need to start: </p>
                 <ul>
                     <li>Terminology</li>
@@ -54,6 +55,7 @@ export class TastingIntro extends Component {
 
                     This is the common process that all whiskeys go through. Moonshine omits the barrel aging, and other distilled spirits are made with other ingredients than fruit or grain. Every step has an impact on the final product and understanding this can enhance the tasting process for a given whiskey.
                 </p>
+                    </div>
                     </div>
             </div>
         );

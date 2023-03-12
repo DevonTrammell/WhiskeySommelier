@@ -29,10 +29,20 @@
 
 }
 .mainhome {
-    /*background-image: linear-gradient(to bottom right, #7b3f00, #836539);
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
+}
+.tastingBackground {
+    background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;*/
+    background-size: cover;
+}
+.tastingBackground2{
+    background-color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.aboutUsBackground {
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
 }
 
 .homeh1 {
@@ -42,56 +52,67 @@
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
-    font-size: 2em;
-    font-weight: bold;
-    font-family: cursive;
-    border-bottom-style: solid;
-    border-width: 5px;
-    border-color: black;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic';
 }
 
 .homep1 {
     font-size: 2em;
     padding-left: 10%;
+    font-family: 'Franklin Gothic';
 }
 
 .homep2 {
     font-size: 1.5em;
     padding-left: 5%;
+    font-family: 'Franklin Gothic';
 }
 
 .homeul {
     padding-left: 18%;
     font-size: 1.5em;
+    font-family: 'Franklin Gothic';
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 300px 900px 300px;
-    grid-template-rows: auto;
+    grid-template-columns: 250px 1100px 300px;
+    grid-template-rows: auto auto 800px;
     grid-template-areas:
         "search intro update"
         "search feature . "
         "search feature . ";
     row-gap: 75px;
+    padding-top: 15px;
 }
 
 .grid-item-2 {
-    /*border-style: solid;
-    border-width: 5px;
-    border-color: black; */
+    padding-top: 2em;
 }
-
 .grid-item-3 {
     border-style: solid;
     border-width: 5px;
     border-color: black;
     padding-left: 1em;
+    padding-top: 3em;
+    background-color: rgba(100, 100, 100, 0.5);
 }
 .grid-item-4{
     
 }
 .grid-item-5{
+
+}
+.grid-item-6{
+
+}
+.grid-item-7 {
+
+}
+.grid-item-8 {
+
+}
+.grid-item-9 {
 
 }
 table{
@@ -120,6 +141,7 @@ h1{
 
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 .featuredTable{
     margin-left: auto;
@@ -134,3 +156,30 @@ th1{
     text-align: center;
     padding-top: 5px;
 }
+
+/*Navbar Section*/
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: goldenrod !important;
+    font-family: Didot, serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+nav .navbar-nav li a {
+    color: goldenrod !important;
+    font-family: Didot, serif;
+}
+/*End of Navbar Section*/
+
+
