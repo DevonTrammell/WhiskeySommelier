@@ -1,4 +1,4 @@
-﻿.dropdown-container {
+﻿/*.dropdown-container {
     text-align: left;
     border: 1px solid #ccc;
     position: relative;
@@ -70,4 +70,55 @@
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+*/
+
+h3 {
+    text-align: center;
+}
+
+.result {
+    margin-top: 1rem;
+}
+
+.filter-list,
+.total {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .filter-list li {
+        margin-bottom: 0.5rem;
+    }
+
+.filter-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-list li:last-child {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.filter-list-item label {
+    vertical-align: text-bottom;
+    margin-left: 0.2rem;
+}
+
+.total {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .filter-list,
+    .total {
+        width: 90%;
+    }
 }

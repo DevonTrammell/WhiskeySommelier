@@ -5,27 +5,10 @@ import "./home.css";
 export class Home extends Component {
     static displayName = Home.name;   
 
-     options = [
-        { value: "green", label: "Green" },
-        { value: "blue", label: "Blue" },
-        { value: "red", label: "Red" },
-        { value: "yellow", label: "Yellow" },
-        { value: "orange", label: "Orange" },
-        { value: "pink", label: "Pink" },
-        { value: "purple", label: "Purple" },
-        { value: "grey", label: "Grey" }
-    ];
-
     render() {
         return (
             <div class="main">
-                <Dropdown 
-                    isSearchable
-                    isMulti
-                    placeHolder="Select..."
-                    options={this.options}
-                    onChange={(value) => console.log(value)}
-                    />
+                <Dropdown/>
                 <div class="grid-container">
                     <div class="grid-item grid-item-1">
                     </div>
