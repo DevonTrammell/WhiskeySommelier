@@ -25,7 +25,6 @@ export class Home extends Component {
                     alert(error);
                 }
         )
-        alert(this.state.whiskeys[0].name)
     }
     sortDataByFilter(filter) {
         var filteredWhiskeys = this.state.whiskeys;
@@ -39,7 +38,6 @@ export class Home extends Component {
         })
 
         this.setState({ whiskeys: filteredWhiskeys });
-        alert(this.state.whiskeys[0].name);
     }
    
     render() {
