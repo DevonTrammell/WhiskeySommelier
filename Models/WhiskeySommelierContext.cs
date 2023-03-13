@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal;
+using static System.Net.Mime.MediaTypeNames;
 
 #nullable disable
 
@@ -21,9 +23,11 @@ namespace WhiskeySommelier.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            string serverName = System.IO.File.ReadAllText(@"C:\\WhiskeyServerName\\serverName.txt");
+
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=EricsMiniPC\\WHISKEYDB;Database=whiskey;Integrated Security=True");
+                optionsBuilder.UseSqlServer($"Server={serverName}\\WHISKEYDB;Database=whiskey;Integrated Security=True");
             }
         }
 
