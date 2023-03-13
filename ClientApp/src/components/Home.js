@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../Global.css";
 import "./home.css";
 
 export class Home extends Component {
@@ -11,6 +12,7 @@ export class Home extends Component {
         };
 
         this.getAllData = this.getAllData.bind(this)
+        this.sortDataByFilter = this.sortDataByFilter.bind(this)
     }
     getAllData() {
         fetch("https://localhost:44373/api/bottles")
@@ -22,7 +24,22 @@ export class Home extends Component {
                 (error) => {
                     alert(error);
                 }
-            )
+        )
+        alert(this.state.whiskeys[0].name)
+    }
+    sortDataByFilter(filter) {
+        var filteredWhiskeys = this.state.whiskeys;
+
+        filter = filter.toLowerCase;
+
+        filteredWhiskeys.sort((a, b) => {
+            return a[filter] >= b[filter]
+                ? 1
+                : -1
+        })
+
+        this.setState({ whiskeys: filteredWhiskeys });
+        alert(this.state.whiskeys[0].name);
     }
    
     render() {
@@ -40,17 +57,15 @@ export class Home extends Component {
                             <li>Explore the cultured side to enjoying whiskey</li>
                         </ul>
                     </div>
-                    <button onClick={this.getAllData}>Press Here</button>
-                    <table cellPadding="0" cellSpacing="0">
+                    <table class="display-table" cellPadding="0" cellSpacing="0">
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Brand</th>
                                 <th>Distiller</th>
                                 <th>Age</th>
                                 <th>Barrel</th>
                                 <th>Nose</th>
-                                <th>Pallete</th>
+                                <th>Palette</th>
                                 <th>Finish</th>
                             </tr>
                         </thead>
@@ -59,12 +74,11 @@ export class Home extends Component {
                             {this.state.whiskeys.map(whiskey =>
                                 <tr>
                                     <td>{whiskey.name}</td>
-                                    <td>{whiskey.brand}</td>
                                     <td>{whiskey.distiller}</td>
                                     <td>{whiskey.age}</td>
                                     <td>{whiskey.barrel}</td>
                                     <td>{whiskey.nose}</td>
-                                    <td>{whiskey.pallete}</td>
+                                    <td>{whiskey.palette}</td>
                                     <td>{whiskey.finish}</td>
                                 </tr>
                             )}

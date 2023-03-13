@@ -23,7 +23,7 @@ namespace WhiskeySommelier.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=ERICSMINIPC;Database=WhiskeySommelier;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=EricsMiniPC\\WHISKEYDB;Database=whiskey;Integrated Security=True");
             }
         }
 
@@ -35,7 +35,7 @@ namespace WhiskeySommelier.Models
             {
                 // entity.HasNoKey();
 
-                entity.ToTable("bottle");
+                entity.ToTable("bottles");
 
                 entity.Property(e => e.Age).HasColumnName("age");
 
