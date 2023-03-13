@@ -9,10 +9,10 @@ export class Layout extends Component {
 
   render () {
     return (
-      <div className="SecondaryContainer">
+        <div className="SecondaryContainer">
         <NavMenu />
         <Container className = "MainContainer">
-          {this.props.children}
+            {this.props.children}
         </Container>
         <Footer />
       </div>
