@@ -97,6 +97,7 @@ export class Home extends Component {
                         </table>
                     </div>
                     <div class="grid-item grid-item-5">
+                        <button className="display-button" onClick={this.getAllData}>Press</button>
                     </div>
                     <div class="grid-item grid-item-6">
                     </div>
