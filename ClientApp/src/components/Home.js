@@ -68,36 +68,8 @@ export class Home extends Component {
                         </ul1>
                     </div>
                     <div class="grid-item grid-item-4">
-                        <table class="display-table" cellPadding="0" cellSpacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Distiller</th>
-                                    <th>Age</th>
-                                    <th>Barrel</th>
-                                    <th>Nose</th>
-                                    <th>Palette</th>
-                                    <th>Finish</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                {this.state.whiskeys.map(whiskey =>
-                                    <tr>
-                                        <td>{whiskey.name}</td>
-                                        <td>{whiskey.distiller}</td>
-                                        <td>{whiskey.age}</td>
-                                        <td>{whiskey.barrel}</td>
-                                        <td>{whiskey.nose}</td>
-                                        <td>{whiskey.palette}</td>
-                                        <td>{whiskey.finish}</td>
-                                    </tr>
-                                )}
-                            </tbody>
-                        </table>
                     </div>
                     <div class="grid-item grid-item-5">
-                        <button className="display-button" onClick={this.getAllData}>Press</button>
                     </div>
                     <div class="grid-item grid-item-6">
                     </div>
