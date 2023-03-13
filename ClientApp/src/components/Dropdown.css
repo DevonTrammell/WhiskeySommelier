@@ -83,20 +83,25 @@ h3 {
 
 .filter-list,
 .total {
-    width: 30%;
+    width: 18%;
     margin: 0 auto;
 }
 
 .filter-list {
+    background-color: black;
     list-style: none;
     padding: 0;
+    border-style: solid;
+    border-color: beige
 }
 
-    .filter-list li {
-        margin-bottom: 0.5rem;
-    }
+.filter-list li {
+    margin-bottom: 0.5rem;
+}
 
 .filter-list-item {
+    color: gold;
+    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
 }
