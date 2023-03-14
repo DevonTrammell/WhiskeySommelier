@@ -101,7 +101,7 @@
     
 }
 .grid-item-5{
-
+    margin: -20px;
 }
 .grid-item-6{
 
@@ -181,5 +181,4 @@ nav .navbar-nav li a {
     font-family: Didot, serif;
 }
 /*End of Navbar Section*/
-
 
