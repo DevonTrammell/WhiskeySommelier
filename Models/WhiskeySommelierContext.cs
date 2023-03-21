@@ -25,7 +25,7 @@ namespace WhiskeySommelier.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string DbPath = Path.Combine(Environment.CurrentDirectory, @"DataBase\whiskey");
+            string DbPath = Path.Combine(Environment.CurrentDirectory, @"DataBase//whiskey");
 
             if (!optionsBuilder.IsConfigured)
             {
