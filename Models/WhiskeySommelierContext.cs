@@ -1,8 +1,10 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal;
 using static System.Net.Mime.MediaTypeNames;
+using System.IO;
 
 #nullable disable
 
@@ -23,11 +25,11 @@ namespace WhiskeySommelier.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string serverName = System.IO.File.ReadAllText(@"C:\\WhiskeyServerName\\serverName.txt");
+            string DbPath = Path.Combine(Environment.CurrentDirectory, @"DataBase\whiskey");
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer($"Server={serverName}\\WHISKEYDB;Database=whiskey;Integrated Security=True");
+                optionsBuilder.UseSqlite($"Data Source ={DbPath}");
             }
         }
 
