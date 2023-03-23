@@ -13,7 +13,10 @@
     background-color: #1f1f1f;
     /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
     opacity: 0.8;*/
-    color: goldenrod;
+    color: antiquewhite;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: sans-serif;
     -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
     -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
     box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
@@ -27,17 +30,17 @@
 .NavBarContainer {
     background-color: black;
 
+
 }
 .mainhome {
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
 }
 .tastingBackground {
-    background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .tastingBackground2{
-    background-color: black;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -52,26 +55,47 @@
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
-    font-size: 2.5em;
-    font-family: 'Franklin Gothic';
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: normal;
+}
+.homeh2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+}
+.homeh3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+}
+.homeh5 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: antiquewhite;
+    font-family: serif;
 }
 
 .homep1 {
-    font-size: 2em;
+    font-size: 1em;
     padding-left: 10%;
-    font-family: 'Franklin Gothic';
+    font-family: serif;
 }
 
 .homep2 {
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 5%;
-    font-family: 'Franklin Gothic';
+    font-family: serif;
+    color: goldenrod;
+    font-weight: normal;
 }
 
 .homeul {
     padding-left: 18%;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic';
+    font-size: 1em;
+    font-family: serif;
 }
 
 .grid-container {
@@ -94,7 +118,7 @@
     border-width: 5px;
     border-color: black;
     padding-left: 1em;
-    padding-top: 3em;
+    padding-top: 1em;
     background-color: rgba(100, 100, 100, 0.5);
 }
 .grid-item-4{
@@ -120,25 +144,33 @@ table{
     border-radius: 5px;
 }
 h1{
-    font-size:2em;
+    font-size:1em;
     color: #E0AA2B;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Snell Roundhand, cursive;
 }
 .main-footer {
-    color: #99741D;
     background-color: black;
     margin-top: -5px;
+}
+.col {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: goldenrod;
+}
+.list-unstyled {
+    color: antiquewhite;
     position: relative;
     font-family: Didot, serif;
     width: 100%;
 }
+.row {
+    font-family: Didot, serif;
+    color: goldenrod;
+}
 .globalWrapper{
     margin-left: auto;
     margin-right: auto;
-
     max-width: 1050px;
-
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -163,7 +195,7 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
     color: goldenrod !important;
-    font-family: Didot, serif;
+    font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 @media (min-width: 768px) {
@@ -178,7 +210,7 @@ a.navbar-brand {
 
 nav .navbar-nav li a {
     color: goldenrod !important;
-    font-family: Didot, serif;
+    font-family: Brush Script MT, Brush Script Std, cursive;
 }
 /*End of Navbar Section*/
 
