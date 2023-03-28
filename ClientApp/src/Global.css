@@ -100,7 +100,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 250px 1100px 300px;
+    grid-template-columns: 20% 55% 25%;
     grid-template-rows: auto auto 800px;
     grid-template-areas:
         "search intro update"
