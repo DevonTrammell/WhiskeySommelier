@@ -58,6 +58,7 @@ namespace WhiskeySommelier.Models
                 entity.Property(e => e.Nose).HasColumnName("nose");
 
                 entity.Property(e => e.Palette).HasColumnName("palette");
+                entity.Property(e => e.Type).HasColumnName("type");
             });
 
             OnModelCreatingPartial(modelBuilder);
