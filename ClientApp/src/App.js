@@ -4,7 +4,8 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { AboutUs } from './components/AboutUs';
 import { TastingIntro } from './components/TastingIntro';
-import { WhiskeyTypes} from './components/WhiskeyTypes';
+import { WhiskeyTypes } from './components/WhiskeyTypes';
+import { TastingNotes } from './components/TastingNotes';
 import './custom.css'
 
 export default class App extends Component {
@@ -14,6 +15,7 @@ export default class App extends Component {
     return (
       <Layout>
         <Route exact path='/' component={Home} />
+        <Route exact path='/TastingNotes' component={TastingNotes} />
         <Route path='/AboutUs' component={AboutUs} />
         <Route path='/TastingIntro' component={TastingIntro} />
         <Route path='/WhiskeyTypes' component={WhiskeyTypes} />
