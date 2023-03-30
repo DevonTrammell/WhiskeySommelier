@@ -48,6 +48,14 @@
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
 }
 
+.home1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+}
+    
+
 .homeh1 {
     color: #E0AA2b;
     text-align: left;
@@ -72,16 +80,16 @@
     font-family: serif;
 }
 .homeh5 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: normal;
     color: antiquewhite;
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 .homep1 {
     font-size: 1em;
     padding-left: 10%;
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 .homep2 {
@@ -95,7 +103,7 @@
 .homeul {
     padding-left: 18%;
     font-size: 1em;
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 .grid-container {
