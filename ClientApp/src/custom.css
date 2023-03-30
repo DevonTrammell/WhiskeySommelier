@@ -41,6 +41,7 @@ code {
     flex-wrap: wrap;
 }
 
+/* Styling of the data cards on the Tasting Notes page. */
 .card {
     background: black;
     width: 15em;
@@ -93,4 +94,4 @@ code {
     padding: 1.2em;
 }
 
-/* Styling of the data cards on the Tasting Notes page. */
+
