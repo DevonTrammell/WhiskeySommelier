@@ -10,10 +10,10 @@
 .MainContainer {
     min-width: 100vw;
     min-height: 100vh;
-    background-color: white;
+    background-color: #1f1f1f;
     /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
     opacity: 0.8;*/
-    color: #4f4b4b;
+    color: antiquewhite;
     font-weight: normal;
     font-size: 1em;
     font-family: sans-serif;
@@ -29,20 +29,28 @@
 
 .NavBarContainer {
     background-color: black;
-
-
+    opacity: 0.6;
 }
 .tastingBackground2{
     padding-left: 1em;
     padding-right: 1em;
 }
 
+.mainhome {
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
+    opacity: 0.6;
+}
+
+.Aboutus {
+
+}
+
 .home1 {
     font-size: 1.5em;
     font-weight: normal;
-    color: black;
+    color: goldenrod;
     font-family: serif;
-    font-weight: bold;
+    font-weight: normal;
 }
     
 
@@ -89,8 +97,8 @@
     font-size: 1em;
     padding-left: 5%;
     font-family: serif;
-    color: black;
-    font-weight: bold;
+    color: goldenrod;
+    font-weight: normal;
 }
 
 .homeul {
@@ -152,9 +160,8 @@ h1{
 }
 .main-footer {
     background-color: black;
+    opacity: 0.6;
     margin-top: -5px;
-    border-top-style: solid;
-    border-top-color: white;
 }
 .col {
     font-family: Didot, serif;
@@ -214,7 +221,7 @@ a.navbar-brand {
 }
 
 nav .navbar-nav li a {
-    color: goldenrod !important;
+    color: white !important;
     font-family: Didot, serif
 }
 /*End of Navbar Section*/
