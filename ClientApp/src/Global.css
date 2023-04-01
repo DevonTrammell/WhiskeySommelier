@@ -44,12 +44,12 @@
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .aboutUsBackground {
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .home1 {
@@ -167,7 +167,7 @@ h1{
 }
 .main-footer {
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.4;
     margin-top: -5px;
 }
 .col {
