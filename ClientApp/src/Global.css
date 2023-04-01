@@ -29,7 +29,7 @@
 
 .NavBarContainer {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .tastingBackground2{
     padding-left: 1em;
@@ -38,11 +38,18 @@
 
 .mainhome {
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
-    opacity: 0.6;
+    opacity: 0.5;
+}
+.tastingBackground {
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
 }
 
-.Aboutus {
-
+.aboutUsBackground {
+    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
+    opacity: 0.5;
 }
 
 .home1 {
@@ -55,7 +62,7 @@
     
 
 .homeh1 {
-    color: black;
+    color: goldenrod;
     text-align: left;
     /*margin-left: 1em;*/
     padding-top: 0.55em;
@@ -63,27 +70,27 @@
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
     font-size: 1.5em;
     font-family: serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 .homeh2 {
     font-size: 1.5em;
     font-weight: normal;
-    color: black;
+    color: goldenrod;
     font-family: serif;
-    font-weight: bold;
+    font-weight: normal;
 
 }
 .homeh3 {
     font-size: 1.5em;
     font-weight: normal;
-    color: black;
+    color: goldenrod;
     font-family: serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 .homeh5 {
     font-size: 1em;
     font-weight: normal;
-    color: #4f4b4b;
+    color: antiquewhite;
     font-family: sans-serif;
 }
 
@@ -160,7 +167,7 @@ h1{
 }
 .main-footer {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
     margin-top: -5px;
 }
 .col {
