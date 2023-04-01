@@ -10,7 +10,8 @@
 .MainContainer {
     min-width: 100vw;
     min-height: 100vh;
-    background-color: #1f1f1f;
+    background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+    opacity: 0.4;
     /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
     opacity: 0.8;*/
     color: antiquewhite;
@@ -34,22 +35,6 @@
 .tastingBackground2{
     padding-left: 1em;
     padding-right: 1em;
-}
-
-.mainhome {
-    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
-    opacity: 0.5;
-}
-.tastingBackground {
-    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.aboutUsBackground {
-    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
-    opacity: 0.5;
 }
 
 .home1 {
@@ -166,13 +151,14 @@ h1{
     font-family: Snell Roundhand, cursive;
 }
 .main-footer {
-    background-color: black;
+    background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
     opacity: 0.5;
     margin-top: -5px;
 }
 .col {
     font-family: Didot, serif;
     color: goldenrod;
+    font-size: 1em;
     font-weight: normal;
 }
 .list-unstyled {
