@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import '../Global.css';
-import logo from '../img/logo_rmbg.png';
+
+import logo from '../img/logo_2.png';
+
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
