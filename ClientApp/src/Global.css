@@ -38,18 +38,18 @@
 
 .mainhome {
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .tastingBackground {
     background-image: url(https://images.unsplash.com/photo-1529877612930-6e7df7e2b02f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHdoaXNrZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-    opacity: 0.4;
+    opacity: 0.6;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .aboutUsBackground {
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .home1 {
@@ -167,7 +167,7 @@ h1{
 }
 .main-footer {
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.6;
     margin-top: -5px;
 }
 .col {
