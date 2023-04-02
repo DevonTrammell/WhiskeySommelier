@@ -17,9 +17,9 @@
     font-weight: normal;
     font-size: 1em;
     font-family: sans-serif;
-    -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
-    -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
-    box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
+    /*-webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*-moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
 }
 
 .SecondaryContainer {
@@ -167,7 +167,7 @@ h1{
 }
 .main-footer {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
     margin-top: -5px;
 }
 .col {
