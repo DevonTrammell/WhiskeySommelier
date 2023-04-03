@@ -5,7 +5,8 @@ import { Home } from './components/Home';
 import { AboutUs } from './components/AboutUs';
 import { TastingIntro } from './components/TastingIntro';
 import { TastingNotes } from './components/TastingNotes';
-import { WhiskeyTypes} from './components/WhiskeyTypes';
+import { WhiskeyTypes } from './components/WhiskeyTypes';
+import { WhiskeyDetails} from './components/WhiskeyDetails';
 import './custom.css'
 
 export default class App extends Component {
@@ -19,7 +20,7 @@ export default class App extends Component {
         <Route path='/TastingIntro' component={TastingIntro} />
         <Route path='/TastingNotes' component={TastingNotes} />
         <Route path='/WhiskeyTypes' component={WhiskeyTypes} />
-        
+        <Route path='/WhiskeyDetails' component={WhiskeyDetails} />
       </Layout>
     );
   }
