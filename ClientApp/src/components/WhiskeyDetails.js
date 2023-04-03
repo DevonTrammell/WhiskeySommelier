@@ -25,7 +25,7 @@ export class WhiskeyDetails extends Component {
                     Nose
                 </h1>
                 <p>
-                    "Crisp green apple, ripe pear and refreshing citrus lemon with background notes of golden cereal."
+                    Crisp green apple, ripe pear and refreshing citrus lemon with background notes of golden cereal.
                 </p>
 
                 <h1 className="homeh1">
