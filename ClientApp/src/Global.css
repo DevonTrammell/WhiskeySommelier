@@ -211,7 +211,7 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
     color: goldenrod !important;
-    font-family: Didot, serif
+    font-family: Didot, serif;
 }
 
 @media (min-width: 768px) {
@@ -226,7 +226,7 @@ a.navbar-brand {
 
 nav .navbar-nav li a {
     color: white !important;
-    font-family: Didot, serif
+    font-family: Didot, serif;
 }
 /*End of Navbar Section*/
 
