@@ -32,7 +32,7 @@ export class WhiskeyDetails extends Component {
                     Palette
                 </h1>
                 <p>
-                    "Orchard fruits and lemon meringue. The deep fruity character of pear lead into citrus lemon, vanilla meringue and light biscuit sweetness."
+                    Orchard fruits and lemon meringue. The deep fruity character of pear lead into citrus lemon, vanilla meringue and light biscuit sweetness.
                 </p>
 
                 <h1 className="homeh1">
