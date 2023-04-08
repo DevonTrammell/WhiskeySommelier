@@ -228,5 +228,9 @@ nav .navbar-nav li a {
     color: white !important;
     font-family: Didot, serif;
 }
+
+nav .navbar-nav li a.active-link {
+    color: goldenrod !important;
+}
 /*End of Navbar Section*/
 
