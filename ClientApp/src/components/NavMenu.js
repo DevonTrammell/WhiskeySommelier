@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem } from 'reactstrap';
+import { Link, NavLink } from 'react-router-dom';
 import '../Global.css';
 
 import logo from '../img/logo_rmbg.png';
@@ -40,20 +40,20 @@ export class NavMenu extends Component {
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                    <NavLink tag={Link} className="text-warning" to="/TastingIntro">Tasting Intro</NavLink>
+                           <NavLink tag={Link} className="text-warning" to="/TastingIntro">Tasting Intro&nbsp; </NavLink>
                 </NavItem>
                 <NavItem>
-                     <NavLink tag={Link} className="text-warning" to="/TastingNotes">Tasting Notes</NavLink>
+                           <NavLink tag={Link} className="text-warning" to="/TastingNotes">Tasting Notes &nbsp; </NavLink>
                 </NavItem>
                 <NavItem>
-                     <NavLink tag={Link} className="text-warning" to="/WhiskeyTypes">Whiskey Types</NavLink>
+                           <NavLink tag={Link} className="text-warning" to="/WhiskeyTypes">Whiskey Types &nbsp; </NavLink>
                 </NavItem>
                 {/*<NavItem>*/}
                 {/*    <NavLink tag={Link} className="text-light" to="/WhiskeyDetails">Whiskey Details</NavLink>*/}
                 {/*</NavItem>*/}
 
                 <NavItem>
-                <NavLink   tag={Link} className="text-warning" to="/AboutUs">About Us</NavLink>
+                      <NavLink tag={Link} className="text-warning" to="/AboutUs">About Us</NavLink>
                  </NavItem>
               </ul>
             </Collapse>
