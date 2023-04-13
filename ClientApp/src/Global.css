@@ -49,6 +49,30 @@
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
 }
 
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.whiskey_data_display_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f1f1f;
+    border-radius: 0.6em;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    z-index: 10;
+    animation: slide-left 2s;
+}
+
 .home1 {
     font-size: 1.5em;
     font-weight: normal;
