@@ -64,7 +64,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #1f1f1f;
+    background-color: black;
     border-radius: 0.6em;
     overflow: hidden;
     height: 90%;
