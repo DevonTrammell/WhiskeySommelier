@@ -18,7 +18,7 @@ export class TastingNotes extends Component {
     }
 
     getAllData() {
-        fetch("https://localhost:44373/api/bottles")
+        fetch("https://localhost:5001/api/bottles")
             .then(res => res.json())
             .then(
                 (whiskeys) => {
