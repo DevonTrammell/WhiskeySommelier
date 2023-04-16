@@ -62,7 +62,7 @@ export class TastingNotes extends Component {
                                 palette={e.palette}
                                 finish={e.finish}
                                 type={e.type}
-                                img={defaultImage}
+                                img={e.image}
                             />
                         );
                     })}
