@@ -29,6 +29,7 @@
 
 .NavBarContainer {
     background-color: black;
+    max-height: 100px;
 }
 .tastingBackground2{
     background-color: black;
@@ -124,14 +125,14 @@
 }
 
 .grid-item-2 {
-    padding-top: 2em;
+    padding-top: 2.2em;
 }
 .grid-item-3 {
     border-style: solid;
     border-width: 5px;
     border-color: black;
     padding-left: 1em;
-    padding-top: 1em;
+    padding-top: 2.2em;
     background-color: rgba(100, 100, 100, 0.5);
 }
 .grid-item-4{
@@ -190,6 +191,7 @@ h1{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    padding-top: 15px;
 }
 .featuredTable{
     margin-left: auto;
@@ -228,5 +230,33 @@ nav .navbar-nav li a {
     color: white !important;
     font-family: Didot, serif;
 }
+.navLinkSpace{
+    padding-right: 8em;
+}
 /*End of Navbar Section*/
 
+/*Begin Footer Section*/
+.main-footer{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+    padding-left: 3em;
+    padding-right: 1em;
+    border-top-style: solid;
+}
+h4{
+    font-size: 15px;
+}
+a:link{
+    color: goldenrod;
+}
+a:visited{
+    color: #756300;
+}
+a:hover{
+    color:#FFED8A;
+}
+/*End Footer Section*/
+.container{
+    max-width: 100%;
+}
