@@ -11,30 +11,13 @@ export class Footer extends Component {
                     <div className="row">
                         {/* Column1 */}
                         <div className="col">
-                            <h4>Whiskey Sommelier</h4>
-                            <ui className="list-unstyled">
-                                <li>1 University Drive, Sierra Hall 1222</li>
-                                <li>Camarillo, 93012, CA</li>
-                                <li>United States Of America</li>
-                            </ui>
+                            Whiskey Sommelier | <a href="mailto:tyler.ault288@myci.csuci.edu">Contact Us</a>
                         </div>
-                        {/* Column2 */}
-                        <div className="col">
-                            <h4>Contact Us</h4>
-                            <ui className="list-unstyled">
-                                <li>eric.rasmussen371@myci.csuci.edu</li>
-                                <li>devon.trammell502@myci.csuci.edu</li>
-                                <li>shuhui.yu820@myci.csuci.edu</li>
-                                <li>sowmya.kodityala857@myci.csuci.edu</li>
-                                <li>tyler.ault288@myci.csuci.edu</li>
-                            </ui>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="row">
+                    <div className="col">
                         <p className="col-sm">
-                            &copy;{new Date().getFullYear()} WHISKEY SOMMELIER | All rights reserved |
+                            &copy;{new Date().getFullYear()} All Rights Reserved, Whiskey Sommelier
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>

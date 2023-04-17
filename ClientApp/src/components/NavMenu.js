@@ -30,13 +30,11 @@ export class NavMenu extends Component {
       <header className="NavBarContainer">
         <Navbar className="navbar-expand-sm navbar-toggleable-sm" light>
           <Container>
-
             <NavLink tag={Link} to="/"  rel="noreferrer">
                 <img src={logo} className="logo" alt="Logo" width="200" height="100" />
-            </NavLink>
+                    </NavLink>
+                    <div className="navLinkSpace">
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-
-
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
@@ -56,7 +54,8 @@ export class NavMenu extends Component {
                     <NavLink activeClassName="active-link" tag={RRNavLink} to="/AboutUs">About Us</NavLink>
                  </NavItem>
               </ul>
-            </Collapse>
+                        </Collapse>
+                        </div>
           </Container>
         </Navbar>
       </header>
