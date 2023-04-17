@@ -29,6 +29,8 @@
 
 .NavBarContainer {
     background-color: black;
+    border-bottom:solid;
+    border-bottom-color:gold;
 }
 .tastingBackground2{
     background-color: black;
