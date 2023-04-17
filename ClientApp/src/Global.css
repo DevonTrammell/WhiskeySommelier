@@ -233,10 +233,12 @@ nav .navbar-nav li a {
 .navLinkSpace{
     padding-right: 8em;
 }
-/*End of Navbar Section*/
-
-/*Begin Footer Section*/
-.main-footer{
+nav .navbar-nav li a.active-link {
+    color: goldenrod !important;
+}
+    /*End of Navbar Section*/
+    /*Begin Footer Section*/
+    .main-footer{
     padding-top: 2em;
     padding-bottom: 1.5em;
     font-size: 15px;
