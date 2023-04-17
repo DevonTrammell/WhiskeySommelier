@@ -31,7 +31,7 @@ export class NavMenu extends Component {
         <Navbar className="navbar-expand-sm navbar-toggleable-sm" light>
           <Container>
             <NavLink tag={Link} to="/"  rel="noreferrer">
-                <img src={logo} className="logo" alt="Logo" width="120" height="60" />
+                <img src={logo} className="logo" alt="Logo" width="200" height="100" />
                     </NavLink>
                     <div className="navLinkSpace">
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />

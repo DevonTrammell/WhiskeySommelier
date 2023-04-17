@@ -11,7 +11,7 @@ export class Footer extends Component {
                     <div className="row">
                         {/* Column1 */}
                         <div className="col">
-                            Whiskey Sommelier | <a href="mailto:contact@whiskeysomm.com">Contact Us</a>
+                            Whiskey Sommelier | <a href="mailto:tyler.ault288@myci.csuci.edu">Contact Us</a>
                         </div>
                     <div className="col">
                         <p className="col-sm">
