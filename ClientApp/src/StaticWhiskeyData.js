@@ -1,82 +1,60 @@
 ﻿const Whiskeys = [
-    //{
-    //    name: "Jack Daniels",
-    //    distiller: "Jack Daniels",
-    //    age: "1",
-    //    barrel: "Single Barrel",
-    //    nose: "stinky",
-    //    palette: "bad",
-    //    finish: "harsh",
-    //    type: "whiskey",
-    //    image: 'https://media.istockphoto.com/id/504430224/photo/jack-daniels-served-with-ice-ball.jpg?s=612x612&w=0&k=20&c=wS0iLXZ3Zpx50ZyimNyQbU6Eunqj89pTRXTu-OGLwW8='
-    //},
-    //{
-    //    name: "Jim Beam",
-    //    distiller: "Jim Beam",
-    //    age: "1",
-    //    barrel: "Multiple Barrel",
-    //    nose: "strong",
-    //    palette: "smooth",
-    //    finish: "pleasent",
-    //    type: "whiskey",
-    //    image: 'https://media.istockphoto.com/id/496314094/photo/bottle-of-jim-beam-bourbon.jpg?s=612x612&w=0&k=20&c=7jV6ztb-84qj5nclaE4fmNdr0REegK_tQGwJxsur60U='
-    //},
-    //{
-    //    name: "Jameson",
-    //    distiller: "Jameson",
-    //    age: "1",
-    //    barrel: "Multiple Barrel",
-    //    nose: "strong",
-    //    palette: "smooth",
-    //    finish: "pleasent",
-    //    type: "whiskey",
-    //    image: 'https://t3.ftcdn.net/jpg/04/88/53/86/360_F_488538681_Az9ns6xhwTAvsmHyw8TIJqN4Ep0CtFSl.jpg'
-    //},
-    //{
-    //    name: "Wild Turkey",
-    //    distiller: "Wild Turkey",
-    //    age: "3",
-    //    barrel: "Single Barrel",
-    //    nose: "sweet",
-    //    palette: "smooth",
-    //    finish: "sharp",
-    //    type: "bourbon",
-    //    image: 'https://thumbs.dreamstime.com/b/poznan-pol-mar-bottle-wild-turkey-brand-kentucky-straight-bourbon-whiskey-produced-austin-nichols-division-116554687.jpg'
-    //},
-    //{
-    //    name: "Makers Mark",
-    //    distiller: "Makers Mark",
-    //    age: "3",
-    //    barrel: "Oak Barrel",
-    //    nose: "sharp",
-    //    palette: "smooth",
-    //    finish: "pleasent",
-    //    type: "whiskey",
-    //    image: 'https://st3.depositphotos.com/1063437/34691/i/600/depositphotos_346918778-stock-photo-poznan-pol-jan-2020-bottle.jpg'
-    //},
-    //{
-    //    name: "Johnnie Walker",
-    //    distiller: "Johnnie Walker",
-    //    age: "5",
-    //    barrel: "Oak Barrel",
-    //    nose: "sweet",
-    //    palette: "smooth",
-    //    finish: "sharp",
-    //    type: "whiskey",
-    //    image: 'https://us.123rf.com/450wm/monticello/monticello1710/monticello171000182/87317386-poznan-poland-aug-24-2017-johnnie-walker-is-the-most-widely-distributed-brand-of-blended-scotch.jpg?ver=6'
-    //},
-    //{
-    //    name: "Glenfiddich",
-    //    distiller: "Glenfiddich",
-    //    age: "21",
-    //    barrel: "Rum Cask",
-    //    nose: "sweet",
-    //    palette: "smooth",
-    //    finish: "sharp",
-    //    type: "whiskey",
-    //    image: 'https://robbreport.com/wp-content/uploads/2020/03/glenfiddich-21-year-old-1.jpg'
-    //}
-   {
+    {
+        name: "Laphroaig",
+        distiller: "Laphroaig",
+        age: "1",
+        barrel: "Ex-bourbon",
+        nose: "Huge smoke, seaweedy, 'medicinal'', with a hint of sweetness.",
+        palette: "Surprising sweetness with hints of salt and layers of peatiness.",
+        finish: "Lingering",
+        type: "Scotch",
+        image: 'https://media.istockphoto.com/id/504430224/photo/jack-daniels-served-with-ice-ball.jpg?s=612x612&w=0&k=20&c=wS0iLXZ3Zpx50ZyimNyQbU6Eunqj89pTRXTu-OGLwW8='
+    },
+    {
+        name: "Talisker Single malt",
+        distiller: "Talisker",
+        age: "1",
+        barrel: "Refill American and European Oak, Amoroso seasoned re- charred American Oak ends.",
+        nose: " A pungent nose with clean ozone-fresh sea-air and beach seaweed backed by richer, smokier notes, sweet malt and sultana sweetness from the cask; gloriously well combined and harmonious.",
+        palette: " An oily-smooth texture, the taste at once smoky and briny yet sweet with rich fruit too, quickly growing more peppery, as woody spiciness takes a clear interest.Luxurious suggestions of roasted fig and sweet date are firmly backed throughout by peat smoke and sea- salt, and there’s a smoothness to the chili ‘catch’ as it goes down.",
+        finish: "Long, powerful and while still sweet, now drying too, with lingering peat smoke and cocoa nibs.",
+        type: "Scotch",
+        image: 'https://media.istockphoto.com/id/496314094/photo/bottle-of-jim-beam-bourbon.jpg?s=612x612&w=0&k=20&c=7jV6ztb-84qj5nclaE4fmNdr0REegK_tQGwJxsur60U='
+    },
+    {
+        name: "Elijah Craig Small Batch",
+        distiller: "Willett",
+        age: "1",
+        barrel: "Oak",
+        nose: "Lots of toasted oak with rich caramel",
+        palette: "Big, rich, and complex. Delightful spice and pepper notes fade to milk chocolate with just a hint of smoke",
+        finish: "Complexity continues. Nicely warming, with lingering chocolate and baking spiceseasent",
+        type: "Bourbon",
+        image: 'https://t3.ftcdn.net/jpg/04/88/53/86/360_F_488538681_Az9ns6xhwTAvsmHyw8TIJqN4Ep0CtFSl.jpg'
+    },
+    {
+        name: "Johnny Drum",
+        distiller: "Willett",
+        age: "3",
+        barrel: "Oak",
+        nose: "Sour apple, vanilla, and oak.",
+        palette: "Fruits, vanilla, spices.",
+        finish: "Fruits, vanilla, spices.",
+        type: "Bourbon",
+        image: 'https://thumbs.dreamstime.com/b/poznan-pol-mar-bottle-wild-turkey-brand-kentucky-straight-bourbon-whiskey-produced-austin-nichols-division-116554687.jpg'
+    },
+    {
+        name: "Blanton’s",
+        distiller: "Blanton’s",
+        age: "3",
+        barrel: "American Oak",
+        nose: "Vanilla, hints of caramel and butterscotch.",
+        palette: "Citrus and Oak.",
+        finish: "Charred oak and vanilla.",
+        type: "Bourbon",
+        image: 'https://st3.depositphotos.com/1063437/34691/i/600/depositphotos_346918778-stock-photo-poznan-pol-jan-2020-bottle.jpg'
+    },
+    {
         name: "Loch Lomond 12 Year",
         distiller: "Loch Lomond",
         age: "12",
