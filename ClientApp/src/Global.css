@@ -79,6 +79,9 @@
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
+    
+    border: solid;
+    border-color: darkgoldenrod;
 }
 
 
