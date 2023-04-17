@@ -50,6 +50,43 @@
     background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
 }
 
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.whiskey_data_display_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 0.6em;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    padding: 2em;
+    z-index: 10;
+    animation: slide-left 0.5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+.data_display_image {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .home1 {
     font-size: 1.5em;
     font-weight: normal;
@@ -57,16 +94,15 @@
     font-family: serif;
     font-weight: normal;
 }
-    
+
 
 .homeh1 {
     color: goldenrod;
-    text-align: left;
     /*margin-left: 1em;*/
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: serif;
     font-weight: normal;
 }
@@ -230,6 +266,7 @@ nav .navbar-nav li a {
     color: white !important;
     font-family: Didot, serif;
 }
+
 .navLinkSpace{
     padding-right: 8em;
 }

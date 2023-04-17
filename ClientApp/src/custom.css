@@ -45,7 +45,7 @@ code {
 .card {
     background: black;
     width: 15em;
-    max-height: 20em;
+    height: 20em;
     border-radius: 0.6em;
     margin: 1em;
     overflow: hidden;
