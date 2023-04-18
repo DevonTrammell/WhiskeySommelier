@@ -16,5 +16,7 @@ namespace WhiskeySommelier.Models
         public string Nose { get; set; }
         public string Palette { get; set; }
         public string Finish { get; set; }
+        public string Type { get; set; }
+        public string Image { get; set; }
     }
 }

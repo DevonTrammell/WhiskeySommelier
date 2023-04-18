@@ -13,10 +13,13 @@
     background-color: #1f1f1f;
     /*background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
     opacity: 0.8;*/
-    color: goldenrod;
-    -webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
-    -moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
-    box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);
+    color: antiquewhite;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: sans-serif;
+    /*-webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*-moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    /*box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
 }
 
 .SecondaryContainer {
@@ -26,57 +29,134 @@
 
 .NavBarContainer {
     background-color: black;
-
-}
-.mainhome {
-    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);
-}
-.tastingBackground {
-    background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-bottom:solid;
+    border-bottom-color:gold;
+    max-height: 200px;
 }
 .tastingBackground2{
     background-color: black;
     padding-left: 1em;
     padding-right: 1em;
 }
-.aboutUsBackground {
-    background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);
+
+.mainhome {
+    /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);*/
+}
+.tastingBackground {
+    /*background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
+.aboutUsBackground {
+    /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/04/weller_mwl042-2048x1365.jpg);*/
+    background-color: black;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.whiskey_data_display_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 0.6em;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    padding: 2em;
+    z-index: 10;
+    animation: slide-left 0.5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    
+    border: solid;
+    border-color: darkgoldenrod;
+}
+
+
+.data_display_image {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+    font-weight: normal;
+}
+
+
 .homeh1 {
-    color: #E0AA2b;
-    text-align: left;
+    color: goldenrod;
     /*margin-left: 1em;*/
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
-    font-size: 2.5em;
-    font-family: 'Franklin Gothic';
+    font-size: 2em;
+    font-family: serif;
+    font-weight: normal;
+}
+.homeh2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+    font-weight: normal;
+
+}
+.homeh3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: goldenrod;
+    font-family: serif;
+    font-weight: normal;
+}
+.homeh5 {
+    font-size: 1em;
+    font-weight: normal;
+    color: antiquewhite;
+    font-family: sans-serif;
 }
 
 .homep1 {
-    font-size: 2em;
+    font-size: 1em;
     padding-left: 10%;
-    font-family: 'Franklin Gothic';
+    font-family: sans-serif;
 }
 
 .homep2 {
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 5%;
-    font-family: 'Franklin Gothic';
+    font-family: serif;
+    color: goldenrod;
+    font-weight: normal;
 }
 
 .homeul {
     padding-left: 18%;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic';
+    font-size: 1em;
+    font-family: sans-serif;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 250px 1100px 300px;
+    grid-template-columns: 20% 55% 25%;
     grid-template-rows: auto auto 800px;
     grid-template-areas:
         "search intro update"
@@ -87,14 +167,14 @@
 }
 
 .grid-item-2 {
-    padding-top: 2em;
+    padding-top: 2.2em;
 }
 .grid-item-3 {
     border-style: solid;
     border-width: 5px;
     border-color: black;
     padding-left: 1em;
-    padding-top: 3em;
+    padding-top: 2.2em;
     background-color: rgba(100, 100, 100, 0.5);
 }
 .grid-item-4{
@@ -120,28 +200,40 @@ table{
     border-radius: 5px;
 }
 h1{
-    font-size:2em;
+    font-size:1em;
     color: #E0AA2B;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Snell Roundhand, cursive;
 }
 .main-footer {
-    color: #99741D;
     background-color: black;
+    opacity: 0.5;
     margin-top: -5px;
-    position: relative;
+}
+.col {
     font-family: Didot, serif;
+    color: goldenrod;
+    font-weight: normal;
+}
+.list-unstyled {
+    color: antiquewhite;
+    position: relative;
+    font-family: Arial Narrow, sans-serif;
     width: 100%;
+}
+.row {
+    font-family: Didot, serif;
+    color: goldenrod;
+    font-weight: normal;
 }
 .globalWrapper{
     margin-left: auto;
     margin-right: auto;
-
     max-width: 1050px;
-
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    padding-top: 15px;
 }
 .featuredTable{
     margin-left: auto;
@@ -177,8 +269,39 @@ a.navbar-brand {
 }
 
 nav .navbar-nav li a {
-    color: goldenrod !important;
+    color: white !important;
     font-family: Didot, serif;
 }
-/*End of Navbar Section*/
 
+.navLinkSpace{
+    padding-right: 8em;
+}
+nav .navbar-nav li a.active-link {
+    color: goldenrod !important;
+}
+    /*End of Navbar Section*/
+    /*Begin Footer Section*/
+    .main-footer{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+    padding-left: 3em;
+    padding-right: 1em;
+    border-top-style: solid;
+}
+h4{
+    font-size: 15px;
+}
+a:link{
+    color: goldenrod;
+}
+a:visited{
+    color: #756300;
+}
+a:hover{
+    color:#FFED8A;
+}
+/*End Footer Section*/
+.container{
+    max-width: 100%;
+}
