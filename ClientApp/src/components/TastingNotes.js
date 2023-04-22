@@ -4,6 +4,7 @@ import { DataCard } from './DataCard';
 import Whiskeys from '../StaticWhiskeyData';
 import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
 import SearchBarStyle from '../SearchBar.css';
+import { WhiskeyDataDisplay } from './WhiskeyDataDisplay';
 
 export class TastingNotes extends Component {
     static displayName = TastingNotes.name;
@@ -13,9 +14,20 @@ export class TastingNotes extends Component {
 
         this.state = {
             whiskeys: [], 
+            searchTerm: '',
         };
 
+        this.changeSearchTerm = this.changeSearchTerm.bind(this);
+        this.dynamicSearch = this.dynamicSearch.bind(this);
         this.getAllData = this.getAllData.bind(this);
+    }
+
+    changeSearchTerm = (e) => {
+        this.setState({searchTerm: e.target.value})
+    }
+
+    dynamicSearch = () => {
+        return this.state.whiskeys.filter(whiskey => whiskey.name.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
     }
 
     getAllData() {
@@ -33,8 +45,7 @@ export class TastingNotes extends Component {
 
     render() {
         this.getAllData()
-        let whiskeys = this.state.whiskeys;
-        const defaultImage = "https://cdn.shopify.com/s/files/1/0576/8085/5207/products/12-year-old-single-bottle_2793b54a-a92f-40ce-9376-7a4c3de4949e_5000x.jpg?v=1648466684";
+        let whiskeys = this.dynamicSearch();
 
         return (
 
@@ -55,7 +66,7 @@ export class TastingNotes extends Component {
                  <div class="wrapper">
                     <div class="form-con search">
                         <form>
-                            <input type="text" placeholder="Search" ></input>
+                            <input type="text" placeholder="Search" value={this.state.searchTerm} onChange={this.changeSearchTerm}></input>
                             <div></div>
                             <span></span>
                         </form>
