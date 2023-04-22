@@ -27,7 +27,10 @@ export class TastingNotes extends Component {
     }
 
     dynamicSearch = () => {
-        return this.state.whiskeys.filter(whiskey => whiskey.name.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
+        return this.state.whiskeys.filter(whiskey =>
+                whiskey.name.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) ||
+                whiskey.barrel.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) ||
+                whiskey.type.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
     }
 
     getAllData() {
