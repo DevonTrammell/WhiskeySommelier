@@ -1,30 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Limelight);
-/*
-* {
-    box-sizing: border-box;
-    font-family: "Poiret One", serif;
-}
-    */
-/*
-body {
-    background: #191919;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: calc(100vh - 16px);
-    font-size: 16px;
-    font-family: "Poiret One", serif;
-    background: repeating-linear-gradient(45deg, #FFFFF0, #FFFFF0 25px, #b5a642 25px, #b5a642 27px, #191919 29px, #191919 29.5px);
-    font-family: "Poiret One", serif;
-    line-height: 1.4em;
-}
 
-body * {
-    color: #b5a642;
-    }
-    */
     
 .wrapper {
     padding: 50px;
@@ -44,119 +20,119 @@ body * {
 }
 
 .form-con.search form {
-        position: relative;
+    position: relative;
     }
 
 .form-con.search input {
-        border: 2px solid #b5a642;
-        border-radius: 50px;
-        font-size: 16px;
-        padding: 10px;
-        line-height: 1em;
-        max-width: 42px;
-        width: 300px;
-        color: #191919;
-        background: #191919;
-        transition: max-width 0.4s 0s, color 0.4s 0s;
-        cursor: pointer;
+    border: 2px solid #b5a642;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1em;
+    max-width: 42px;
+    width: 300px;
+    color: #191919;
+    background: #191919;
+    transition: max-width 0.4s 0s, color 0.4s 0s;
+    cursor: pointer;
     }
 
 .form-con.search input::-webkit-input-placeholder {
-            color: #191919;
-            transition: color 0.4s 0s;
+    color: #191919;
+    transition: color 0.4s 0s;
         }
 
 .form-con.search input:focus {
-            max-width: 300px;
-            transition: max-width 0.4s 0.4s, color 0.4s 0.4s;
-            outline: none;
-            color: #b5a642;
-            cursor: auto;
+    max-width: 300px;
+    transition: max-width 0.4s 0.4s, color 0.4s 0.4s;
+    outline: none;
+    color: #b5a642;
+    cursor: auto;
         }
 
 .form-con.search input:focus::-webkit-input-placeholder {
-                color: #b5a642;
-                transition: color 0.4s 0.4s;
+    color: #b5a642;
+    transition: color 0.4s 0.4s;
             }
 
 .form-con.search input:focus ~ span {
-                opacity: 1;
-                pointer-events: auto;
-                transition: 0.4s 0.4s;
-                cursor: pointer;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s 0.4s;
+    cursor: pointer;
             }
 
 .form-con.search input:focus ~ span:hover:before, .form-con.search input:focus ~ span:hover:after {
-                    background-color: #790000;
-                    transition: 0.4s;
+    background-color: #790000;
+    transition: 0.4s;
                 }
 
 .form-con.search input:focus div {
-                transform: rotate(45deg) translateX(-100px);
-                opacity: 0;
-                transition: transform 0.4s 0s, opacity 0.2s 0.2s;
+    transform: rotate(45deg) translateX(-100px);
+    opacity: 0;
+    transition: transform 0.4s 0s, opacity 0.2s 0.2s;
             }
 
 .form-con.search input + div {
-            width: 20px;
-            height: 2px;
-            background-color: transparent;
-            transform: rotate(45deg);
-            position: absolute;
-            bottom: -7px;
-            right: -7px;
-            transform-origin: 100% 50%;
-            opacity: 1;
-            transition: transform 0.4s 0.4s, opacity 0.2s 0.4s;
+    width: 20px;
+    height: 2px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    transform-origin: 100% 50%;
+    opacity: 1;
+    transition: transform 0.4s 0.4s, opacity 0.2s 0.4s;
         }
 
 .form-con.search input + div:before, .form-con.search input + div:after {
-                content: "";
-                position: absolute;
-                width: 2px;
-                height: 4px;
-                background-color: #b5a642;
-                top: 50%;
-                transform: translateY(-50%);
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: #b5a642;
+    top: 50%;
+    transform: translateY(-50%);
             }
 
 .form-con.search input + div:before {
-                left: 0;
-                width: 16px;
+    left: 0;
+    width: 16px;
             }
 
 .form-con.search input + div:after {
-                right: 0;
-                width: 2px;
+    right: 0;
+    width: 2px;
             }
 
 .form-con.search span {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        display: block;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.4s 0s;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s 0s;
     }
 
 .form-con.search span:before, .form-con.search span:after {
-            content: "";
-            position: absolute;
-            width: 15px;
-            height: 2px;
-            left: 50%;
-            background-color: #ac0000;
-            top: 50%;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    left: 50%;
+    background-color: #ac0000;
+    top: 50%;
         }
 
 .form-con.search span:before {
-            transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
         }
 
 .form-con.search span:after {
-            transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
         }
