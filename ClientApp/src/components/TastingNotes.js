@@ -3,6 +3,7 @@ import '../custom.css';
 import { DataCard } from './DataCard';
 import Whiskeys from '../StaticWhiskeyData';
 import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
+import SearchBarStyle from '../SearchBar.css';
 
 export class TastingNotes extends Component {
     static displayName = TastingNotes.name;
@@ -50,6 +51,18 @@ export class TastingNotes extends Component {
 
             <div className="layout">
                 <header className="tasting-notes-header">Tasting Notes</header>
+          
+                 <div class="wrapper">
+                    <div class="form-con search">
+                        <form>
+                            <input type="text" placeholder="Search" ></input>
+                            <div></div>
+                            <span></span>
+                        </form>
+                
+                      </div>
+                   </div>
+
                 <div className='card-container'>
                     {whiskeys.map((e) => {
                         return (
