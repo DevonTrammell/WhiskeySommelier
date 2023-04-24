@@ -7,6 +7,10 @@
     background-color: black;
 }*/
 
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+
 .MainContainer {
     min-width: 100vw;
     min-height: 100vh;
@@ -16,7 +20,10 @@
     color: antiquewhite;
     font-weight: normal;
     font-size: 1em;
-    font-family: sans-serif;
+    font-family: 'Poiret One', serif;
+    letter-spacing: 0.005em;
+    line-height: 1.7em;
+    text-align: justify;
     /*-webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
     /*-moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
     /*box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
@@ -33,10 +40,8 @@
     border-bottom-color:gold;
     max-height: 200px;
 }
-.tastingBackground2{
+.tastingBackground {
     background-color: black;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 .mainhome {
@@ -97,7 +102,7 @@
     font-size: 1.5em;
     font-weight: normal;
     color: goldenrod;
-    font-family: serif;
+    font-family: 'Poiret One', serif;
     font-weight: normal;
 }
 
@@ -109,41 +114,42 @@
     padding-bottom: 0.55em;
     /* font-family: "Brush Script MT", cursive;         Still having issues rendering the right font for this - Wanted cursive. */
     font-size: 2em;
-    font-family: serif;
+    font-family: 'Poiret One', serif;
     font-weight: normal;
 }
 .homeh2 {
     font-size: 1.5em;
     font-weight: normal;
     color: goldenrod;
-    font-family: serif;
+    font-family: 'Poiret One', serif;
     font-weight: normal;
-
 }
 .homeh3 {
     font-size: 1.5em;
     font-weight: normal;
     color: goldenrod;
-    font-family: serif;
+    font-family: 'Poiret One', serif;
     font-weight: normal;
 }
 .homeh5 {
     font-size: 1em;
     font-weight: normal;
     color: antiquewhite;
-    font-family: sans-serif;
+    font-family: 'Poiret One', serif;
+    line-height: 1.7em;
+    text-align: justify;
 }
 
 .homep1 {
     font-size: 1em;
     padding-left: 10%;
-    font-family: sans-serif;
+    font-family: 'Poiret One', serif;
 }
 
 .homep2 {
     font-size: 1em;
     padding-left: 5%;
-    font-family: serif;
+    font-family: 'Poiret One', serif;
     color: goldenrod;
     font-weight: normal;
 }
@@ -151,7 +157,7 @@
 .homeul {
     padding-left: 18%;
     font-size: 1em;
-    font-family: sans-serif;
+    font-family: 'Poiret One', serif;
 }
 
 .grid-container {
@@ -199,11 +205,11 @@ table{
     border: 2px solid;
     border-radius: 5px;
 }
-h1{
-    font-size:1em;
+h1 {
+    font-size: 1em;
     color: #E0AA2B;
     font-weight: normal;
-    font-family: Snell Roundhand, cursive;
+    font-family: 'Poiret One', serif;
 }
 .main-footer {
     background-color: black;
@@ -211,18 +217,18 @@ h1{
     margin-top: -5px;
 }
 .col {
-    font-family: Didot, serif;
+    font-family: 'Poiret One', serif;
     color: goldenrod;
     font-weight: normal;
 }
 .list-unstyled {
     color: antiquewhite;
     position: relative;
-    font-family: Arial Narrow, sans-serif;
+    font-family: 'Poiret One', serif;
     width: 100%;
 }
 .row {
-    font-family: Didot, serif;
+    font-family: 'Poiret One', serif;
     color: goldenrod;
     font-weight: normal;
 }
@@ -255,7 +261,7 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
     color: goldenrod !important;
-    font-family: Didot, serif;
+    font-family: 'Poiret One', serif;
 }
 
 @media (min-width: 768px) {
@@ -269,8 +275,8 @@ a.navbar-brand {
 }
 
 nav .navbar-nav li a {
-    color: white !important;
-    font-family: Didot, serif;
+    color: antiquewhite !important;
+    font-family: 'Poiret One', serif;
 }
 
 .navLinkSpace{
