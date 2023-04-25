@@ -305,3 +305,9 @@ a:hover{
 .container{
     max-width: 100%;
 }
+button{
+    background-color: darkgoldenrod;
+    border-radius: 25px;
+    float: right;
+    color: white;
+}
