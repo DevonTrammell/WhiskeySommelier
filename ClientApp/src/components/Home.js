@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import backgroundImage from '../img/Background/bk5.png';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -40,13 +41,43 @@ export class Home extends Component {
    
     render() {
         return (
-            <div class="mainhome">
+         
+                <div class="mainhome" style={{
+                    backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "10%", width: '100%'
+                }}>
                 <div class="grid-container">
                     <div class="grid-item grid-item-1">
                     </div>
                     <div class="grid-item grid-item-2">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />  
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <h1 class="home1">The companion to your whiskey tasting needs</h1>
                         <div class="homep1">
+                            <br />
+                            <br />
+                      
                             <p1>We'll help you:</p1>
                         </div>
                         <div class="homeul">
@@ -55,10 +86,33 @@ export class Home extends Component {
                                 <li>Gain insight into your favorite whiskey</li>
                                 <li>Explore the cultured side to enjoying whiskey</li>
                             </ul>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            <p2>Stay tuned for updates to the site!</p2>
+                            <br />
+                            <br />
+                            <li>Search for your favorite whiskey</li>
+                            <li>Detailed flavor analysis</li>
                         </div>
                     </div>
                    
-                    <div class="grid-item grid-item-3">
+                     <div class="grid-item grid-item-3">
                         <div class="homep2">
                             <p2>Stay tuned for updates to the site!</p2>
                         </div>

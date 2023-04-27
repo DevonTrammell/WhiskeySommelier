@@ -1,13 +1,26 @@
 ﻿import React, { Component } from 'react';
+import backgroundImage from '../img/Background/bk1.png';
 
 export class TastingIntro extends Component {
     static displayName = TastingIntro.name;
 
     render() {
         return (
-            <div class="tastingBackground">
+           
+                <div class="tastingBackground2" style={{
+                backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "10%", width: "100%" }}>
+            
                 <div class="globalWrapper">
-                    <div class="tastingBackground2">
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <h1 class="homeh1">Introduction to Whiskey Tasting</h1>
                 <p>If you're new to whiskey tasting, here's the info you need to start: </p>
                 <ul>
@@ -57,7 +70,7 @@ export class TastingIntro extends Component {
                 </p>
                     </div>
                     </div>
-            </div>
+  
         );
     }
 }

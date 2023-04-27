@@ -33,15 +33,18 @@
     border-bottom-color:gold;
     max-height: 200px;
 }
+
 .tastingBackground2{
-    background-color: black;
-    padding-left: 1em;
-    padding-right: 1em;
+    /*background-color: black;*/
+   /* padding-left: 1em;
+    padding-right: 1em;*/
 }
+    
 
 .mainhome {
     /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);*/
 }
+
 .tastingBackground {
     /*background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);*/
     /*background-repeat: no-repeat;
@@ -111,6 +114,7 @@
     font-size: 2em;
     font-family: serif;
     font-weight: normal;
+    text-align: center;
 }
 .homeh2 {
     font-size: 1.5em;
@@ -132,6 +136,7 @@
     font-weight: normal;
     color: antiquewhite;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .homep1 {
