@@ -15,13 +15,19 @@ code {
     */
 
 /* Styling of the layout for the data cards on the Tasting Notes page. */
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
 .tasting-notes-header {
     text-align: center;
     font-size: 3em;
+    color: goldenrod;
+    font-family: 'Poiret One', serif;
 }
 
 .header h1 {
-    font-family: sans-serif;
+    font-family: 'Poiret One', serif;
     font-size: 3em;
     margin-bottom: 0.2em;
     line-height: 1.2;
@@ -72,7 +78,7 @@ code {
     line-height: 1.4;
     font-size: 1em;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poiret One', serif;
     transition: all ease-in 100ms;
 }
 
@@ -80,6 +86,7 @@ code {
     font-size: 1em;
     color: gold;
     font-size: .5em;
+    font-family: 'Poiret One', serif;
 }
 
 .card-name {
@@ -89,6 +96,7 @@ code {
     letter-spacing: 0.04em;
     margin: 1.4em 0 0 0;
     text-transform: uppercase;
+    font-family: 'Poiret One', serif;
 }
 
 .card-body {
