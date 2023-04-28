@@ -46,9 +46,20 @@ export class TastingNotes extends Component {
             )
     }
 
-    render() {
+    componentDidMount() {
         this.getAllData()
+    }
+
+    render() {
         let whiskeys = this.dynamicSearch();
+
+        document.addEventListener('keypress', function (e) {
+            if (e.keyCode === 13 || e.which === 13) {
+                e.preventDefault();
+                return false;
+            }
+
+        });
 
         return (
 
@@ -68,7 +79,7 @@ export class TastingNotes extends Component {
           
                  <div class="wrapper">
                     <div class="form-con search">
-                        <form>
+                        <form className="searchForm">
                             <input type="text" placeholder="Search" value={this.state.searchTerm} onChange={this.changeSearchTerm}></input>
                             <div></div>
                             <span></span>
