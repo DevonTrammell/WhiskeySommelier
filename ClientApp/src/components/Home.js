@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import backgroundImage from '../img/Background/bk5.png';
+import backgroundImage from '../img/Background/bk7.png';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -43,9 +43,10 @@ export class Home extends Component {
         return (
          
                 <div class="mainhome" style={{
-                    backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "10%", width: '100%'
+                backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width: '100%',
+                height: '10%', backgroundPosition: "center"
                 }}>
-                <div class="grid-container">
+                 <div class="grid-container">
                     <div class="grid-item grid-item-1">
                     </div>
                     <div class="grid-item grid-item-2">
@@ -66,8 +67,11 @@ export class Home extends Component {
                         <br />
                         <br />
                         <br />
-                        <br />
                         <br />  
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <br />
                         <br />
                         <br />
@@ -103,38 +107,53 @@ export class Home extends Component {
                             <br />
                             <br />
                             <br />
+                            <br />
+                            <br />
+                            <br />
 
-                            <p2>Stay tuned for updates to the site!</p2>
-                            <br />
-                            <br />
-                            <li>Search for your favorite whiskey</li>
-                            <li>Detailed flavor analysis</li>
+                            <div class="homep2">
+                                <p2>Stay tuned for updates to the site!</p2>
+                            </div>
+                                <br />
+                                <br />
+                            <ul1>
+                                <li>Search for your favorite whiskey</li>
+                                <li>Detailed flavor analysis</li>
+                                </ul1>
+                            </div>
                         </div>
-                    </div>
+           
                    
-                     <div class="grid-item grid-item-3">
+                    <div class="grid-item grid-item-3">
+                        {/*
                         <div class="homep2">
+                
                             <p2>Stay tuned for updates to the site!</p2>
                         </div>
                         <ul1>
                             <li>Search for your favorite whiskey</li>
                             <li>Detailed flavor analysis</li>
                         </ul1>
+                        */}
                     </div>
                     <div class="grid-item grid-item-4">
                     </div>
                     <div class="grid-item grid-item-5">
                     </div>
+                       {/*
                     <div class="grid-item grid-item-6">
                     </div>
                     <div class="grid-item grid-item-7">
                     </div>
                     <div class="grid-item grid-item-8">
-                    </div>
+                     
+                   </div>
                     <div class="grid-item grid-item-9">
-                    </div>
-                </div>
-            </div>
+                    </div> */}
+                    
+                </div > 
+                   
+            </div > 
         );
     }
 }

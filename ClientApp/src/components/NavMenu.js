@@ -3,7 +3,7 @@ import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLi
 import { NavLink as RRNavLink, Link } from 'react-router-dom';
 import '../Global.css';
 
-import logo from '../img/logo_rmbg.png';
+import logo from '../img/Logo/logo_rmbg.png';
 
 
 

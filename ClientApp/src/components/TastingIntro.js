@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import backgroundImage from '../img/Background/bk1.png';
+import backgroundImage from '../img/Background/bk6.png';
 
 export class TastingIntro extends Component {
     static displayName = TastingIntro.name;
@@ -7,20 +7,11 @@ export class TastingIntro extends Component {
     render() {
         return (
            
-                <div class="tastingBackground2" style={{
-                backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "10%", width: "100%" }}>
-            
+                <div class="tastingBackground2" style={{backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover",
+                height: "100%"}}>
+       
                 <div class="globalWrapper">
-
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+ 
                 <h1 class="homeh1">Introduction to Whiskey Tasting</h1>
                 <p>If you're new to whiskey tasting, here's the info you need to start: </p>
                 <ul>

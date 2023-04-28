@@ -4,6 +4,7 @@ import { DataCard } from './DataCard';
 import Whiskeys from '../StaticWhiskeyData';
 import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
 
+
 export class TastingNotes extends Component {
     static displayName = TastingNotes.name;
 

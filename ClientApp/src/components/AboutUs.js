@@ -26,7 +26,7 @@ export class AboutUs extends Component {
                 <br />
                 <br />
                      
-                        <h1 className="homeh1">About Us</h1>
+                <h1 className="homeh1">About Us</h1>
               
                 <br />
                 <br />
