@@ -29,8 +29,9 @@ export class DataCard extends React.Component {
                 {this.state.clicked ?
                     <div className="whiskey_data_display_container">
                     <div className="buttonClass">
-                            <button onClick={this.handleClick}>X</button>
+                            <span onClick={this.handleClick}></span>
                         </div>
+
                         <WhiskeyDataDisplay
                                 name={this.props.name}
                                 nose={this.props.nose}

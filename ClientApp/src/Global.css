@@ -311,10 +311,62 @@ a:hover{
 .container{
     max-width: 100%;
 }
-button{
-    background-color: darkgoldenrod;
-    border-radius: 25px;
-    float: right;
-    color: red;
-    font: inherit;
+.buttonClass input:focus ~ span:hover:before, .buttonClass input:focus ~ span:hover:after {
+    background-color: #790000;
+    transition: 0.4s;
 }
+.buttonClass input:focus ~ span {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s 0.4s;
+    cursor: pointer;
+}
+.buttonClass input:focus div {
+    transform: rotate(45deg) translateX(-100px);
+    opacity: 0;
+    transition: transform 0.4s 0s, opacity 0.2s 0.2s;
+}
+.buttonClass span:before {
+    transform: translateX(-50%) rotate(45deg);
+}
+.buttonClass span:after {
+    transform: translateX(-50%) rotate(-45deg);
+}
+.buttonClass span:before, .buttonClass span:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    left: 95%;
+    background-color: #ac0000;
+    top: 5%;
+    cursor: pointer;
+}
+/*.buttonClass{
+    display: flex;
+    justify-content: center;
+    float:right;
+}*/
+.buttonClass input + div {
+    width: 20px;
+    height: 2px;
+    background-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    transform-origin: 100% 50%;
+    opacity: 1;
+    transition: transform 0.4s 0.4s, opacity 0.2s 0.4s;
+}
+.buttonClass input + div:before, .buttonClass input + div:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: #b5a642;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
