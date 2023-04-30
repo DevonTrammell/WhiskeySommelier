@@ -27,7 +27,11 @@ export class DataCard extends React.Component {
         return (
             <div>
                 {this.state.clicked ?
-                    <div className="whiskey_data_display_container" onClick={this.handleClick}>
+                    <div className="whiskey_data_display_container">
+                    <div className="buttonClass">
+                            <span onClick={this.handleClick}></span>
+                        </div>
+
                         <WhiskeyDataDisplay
                                 name={this.props.name}
                                 nose={this.props.nose}
@@ -35,7 +39,7 @@ export class DataCard extends React.Component {
                                 finish={this.props.finish}
                                 barrel={this.props.barrel}
                                 img={this.props.img}
-                            />
+                        />
                     </div> :
                     <div>
                         <div className="card" onClick={this.handleClick}>
