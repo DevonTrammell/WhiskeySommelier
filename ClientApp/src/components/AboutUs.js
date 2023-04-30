@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import backgroundImage from '../img/Background/bk1.png';
+import backgroundImage from '../img/Background/BkAboutUs.png';
 
 export class AboutUs extends Component {
     static displayName = AboutUs.name;

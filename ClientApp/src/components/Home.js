@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import backgroundImage from '../img/Background/bk7.png';
+import backgroundImage from '../img/Background/Bkhome.png';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -44,7 +44,7 @@ export class Home extends Component {
          
                 <div class="mainhome" style={{
                 backgroundImage: `url(${backgroundImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", width: '100%',
-                height: '100%', /*backgroundPosition: "center"*/
+                height: '100%', 
                 }}>
                 {/*  <div class="grid-container">*/}
                 {/* <div class="grid-item grid-item-1">

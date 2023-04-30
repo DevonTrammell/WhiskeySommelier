@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import backgroundImage from '../img/Background/bk6.png';
+import backgroundImage from '../img/Background/BkIntro.png';
 
 export class TastingIntro extends Component {
     static displayName = TastingIntro.name;
