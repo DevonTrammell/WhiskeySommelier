@@ -42,8 +42,6 @@ export class DataCard extends React.Component {
                             <img className="card-image" src={this.props.img} />
                             <div className="card-body">
                                 <h5 className="card-name">{this.props.name}</h5>
-                                <p className="card-description">{this.props.nose}</p>
-                                <h2 className="card-barrel">{this.props.barrel}</h2>
                             </div>
                         </div>
                     </div>
