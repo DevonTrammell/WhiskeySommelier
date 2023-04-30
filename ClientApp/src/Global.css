@@ -309,5 +309,6 @@ button{
     background-color: darkgoldenrod;
     border-radius: 25px;
     float: right;
-    color: white;
+    color: red;
+    font: inherit;
 }
