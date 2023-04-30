@@ -1,15 +1,11 @@
-﻿
-/*#root {
-    width: 100vw;
-    height: 100vh;
+﻿@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import "./scrollbar.css";
+
+#root {
     overflow-x: hidden;
-    background: linear-gradient(209deg, rgba(0,0,0,1) 0%, rgba(124,71,43,1) 53%, rgba(0,0,0,1) 100%);
+    overflow-y:auto;
     background-color: black;
-}*/
-
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-
-
+}
 
 .MainContainer {
     min-width: 100vw;
@@ -26,6 +22,8 @@
     /*-webkit-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
     /*-moz-box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
     /*box-shadow: 12px 12px 13px -4px rgba(214,214,214,0.54);*/
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .SecondaryContainer {
@@ -45,6 +43,9 @@
 
 .mainhome {
     /*background-image: url(https://mwlpdx.com/wp-content/uploads/2020/05/weller_mwl004-2048x1365.jpg);*/
+
+    overflow-x: hidden;
+    overflow-y: auto
 }
 .tastingBackground {
     /*background-image: url(https://media.scotchwhisky.com/images/media/b238feeb0fe7ea360414a6a5de49bd44.jpg);*/
