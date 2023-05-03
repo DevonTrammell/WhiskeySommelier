@@ -381,6 +381,7 @@ a:hover{
     cursor: pointer;
     font-family: 'Poiret One', serif;
     color: goldenrod;
+    font-weight: normal;
 }
 
     .accordion dt:not(.open):hover div {
