@@ -419,10 +419,12 @@ a:hover{
         }
 
         .accordion dt div:before {
+            content: '';
             transform: translateX(calc(-50% - 3px)) rotate(45deg);
         }
 
         .accordion dt div:after {
+            content: '';
             transform: translateX(calc(-50% + 3px)) rotate(-45deg);
         }
 
@@ -546,7 +548,7 @@ a:hover{
     opacity: 0;
     animation-name: l5;
 }
-a {
+.a {
     transition: 0.3s;
 }
     
