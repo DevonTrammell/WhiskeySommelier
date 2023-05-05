@@ -384,20 +384,20 @@ a:hover{
     font-weight: normal;
 }
 
-    .accordion dt:not(.open):hover div {
+.accordion dt:not(.open):hover div {
         transform: translateY(calc(-50% + 5px));
-    }
+}
 
-    .accordion dt.open + dd {
+.accordion dt.open + dd {
         max-height: 1000px;
         transition: 1s;
-    }
+}
 
-    .accordion dt.open div {
+.accordion dt.open div {
         transform: translateY(calc(-50% + 5px)) rotate(180deg);
-    }
+}
 
-    .accordion dt div {
+.accordion dt div {
         position: absolute;
         top: 50%;
         right: 10px;
@@ -405,10 +405,10 @@ a:hover{
         width: 30px;
         height: 15px;
         transition: 0.5s;
-    }
+}
 
-        .accordion dt div:before,
-        .accordion dt div:after {
+.accordion dt div:before,
+.accordion dt div:after {
             content: '';
             position: absolute;
             width: 10px;
@@ -416,15 +416,15 @@ a:hover{
             left: 50%;
             background-color: goldenrod;
             top: 50%;
-        }
+ }
 
-        .accordion dt div:before {
+.accordion dt div:before {
             transform: translateX(calc(-50% - 3px)) rotate(45deg);
-        }
+}
 
-        .accordion dt div:after {
+.accordion dt div:after {
             transform: translateX(calc(-50% + 3px)) rotate(-45deg);
-        }
+}
 
 .accordion dd {
     padding: 0;
@@ -434,7 +434,7 @@ a:hover{
     transition: 0.5s;
 }
 
-    .accordion dd .inner {
+.accordion dd .inner {
         padding: 10px 10px 10px 10px;
     }
 
@@ -455,7 +455,7 @@ a:hover{
     animation-name: l1;
 }
 
-    .loading div {
+.loading div {
         width: 50px;
         height: 50px;
         box-shadow: 0 0 0 2px goldenrod;
@@ -469,12 +469,12 @@ a:hover{
         animation-duration: 2.5s;
         animation-timing-function: linear;
         animation-direction: alternate;
-    }
+}
 
-        .loading div:nth-of-type(2) {
+.loading div:nth-of-type(2) {
             transform: rotate(45deg) translate(-60%, -60%);
             animation-name: l2;
-        }
+}
 
 @keyframes l1 {
     0%, 50% {
