@@ -21,7 +21,7 @@ export class TastingIntro extends Component {
                     <div className="tastingBackground2">
                         <h1 className="homeh1">Introduction to Whiskey Tasting</h1>
                         <p>If you're new to whiskey tasting, here's the info you need to start:</p>
-                        <ul>
+                        {/* <ul>
                             <li>Terminology</li>
                             <li>Whiskey</li>
                             <li>Glassware</li>
@@ -30,7 +30,7 @@ export class TastingIntro extends Component {
                             <li>Water</li>
                             <li>Palette</li>
                             <li>Distilling Insights</li>
-                        </ul>
+                        </ul>*/}
 
                         <dl className="accordion">
                             <dt>Terminology <div></div></dt>
@@ -94,7 +94,10 @@ export class TastingIntro extends Component {
                                     <p>There are many kinds of whiskeys in the world with different ingredients, tastes, and variations in how they are made.To better understand the whiskey's creation is to better understand the tastes that come through. Whiskey is the result of taking grains (or fruits in the case of brandy), boiling them in a brew to extract sugars and starches, introducing that brew to yeast to east the sugars and starches and generate alcohol, and distilling that product such that the alcohol is what remains. That alcohol solution is then aged in a wooden barrel. The wood imparts color and various sugars which provide taste over the aging process. Before distribution, the whiskey is diluted with water to meet legal safety standards. It is then bottled and sent out for distribution. This is the common process that all whiskeys go through. Moonshine omits the barrel aging, and other distilled spirits are made with other ingredients than fruit or grain. Every step has an impact on the final product and understanding this can enhance the tasting process for a given whiskey.</p>
                                 </div>
                             </dd>
-
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                         </dl>
                     </div>
                 </div>
