@@ -21,31 +21,22 @@ export class TastingIntro extends Component {
                     <div className="tastingBackground2">
                         <h1 className="homeh1">Introduction to Whiskey Tasting</h1>
                         <p>If you're new to whiskey tasting, here's the info you need to start:</p>
-                        {/* <ul>
-                            <li>Terminology</li>
-                            <li>Whiskey</li>
-                            <li>Glassware</li>
-                            <li>Tasting Notes</li>
-                            <li>Flavor and Nose Samples</li>
-                            <li>Water</li>
-                            <li>Palette</li>
-                            <li>Distilling Insights</li>
-                        </ul>*/}
+
 
                         <dl className="accordion">
                             <dt>Terminology <div></div></dt>
                             <dd>
                                 <div className="inner">
-                                    <p>Flight: A selection of whiskeys to taste.
-
-                                        Palette: The range of tastes associated with a given whiskey.
-
-                                        Nose: The smell of a given whiskey.
-
-                                        Finish: The taste which comes after swallowing the whiskey, also called the aftertaste.</p>
+                                    <p>Flight: A selection of whiskeys to taste.</p>
+                                    <br />
+                                    <p>Palette: The range of tastes associated with a given whiskey.</p>
+                                    <br />
+                                    <p>Nose: The smell of a given whiskey.</p>
+                                    <br />
+                                    <p>Finish: The taste which comes after swallowing the whiskey, also called the aftertaste.</p>
                                 </div>
                             </dd>
-
+                            <br />
                             <dt>Whiskey Selection<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -53,6 +44,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt>Glassware<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -60,6 +52,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt>Tasting Notes<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -67,6 +60,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt> Flavor and Nose Samples<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -74,6 +68,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt>Water<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -81,6 +76,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt>Palette<div></div></dt>
                             <dd>
                                 <div className="inner">
@@ -88,6 +84,7 @@ export class TastingIntro extends Component {
                                 </div>
                             </dd>
 
+                            <br />
                             <dt>Distilling Insights<div></div></dt>
                             <dd>
                                 <div className="inner">
