@@ -22,72 +22,172 @@ export class WhiskeyTypes extends Component {
                         <h1 class="homeh1">Whiskey Types</h1>
                         <h5 class="homeh5">Stay tuned for more types of whiskey!</h5>
                         <br />
-                        <h2 class="homeh2">American Whiskey</h2>
-
-                        <h3 class="homeh3">Bourbon</h3>
-                        <br />
-                        <p>Bourbon is a distinctly American whiskey hailing from the American South; particularly with strong origins in Kentucky. In order to be formally recognized as a bourbon, a whiskey must be made from a mash being composed of at least 51 percent corn. Barrels must be new charred oak. This combination of mash and barrel requirements creates a whiskey which is sweeter on the palette, often with strong tastes of vanilla, caramel, spices and fruit.</p>
-                        <br />
-
-                        <h4 class="homeh3">Tenessee Whiskey</h4>
-                        <br />
-                        <p>Insert Rye info</p>
-                        <br />
-
-
-                        <h4 class="homeh3">Rye</h4>
-                        <br />
-                        <p>Insert Rye info</p>
-                        <br />
-
-                        <h4 class="homeh3">Moonshine</h4>
-                        <br />
-                        <p>Insert Rye info</p>
-                        <br />
-
-                        <h4 class="homeh3">Wheat Whiskey</h4>
-                        <br />
-                        <p>Insert Rye info</p>
-                        <br />
-                        
-                        <h2 class="homeh3">Scotch</h2>
-                        <br />
-                        <p>Scotch is a product of Scotland. The entire country is divided into regions which produce their own defining tasting notes. A scotch must be made of no more than malted barley and water, with optional cereal grains. The malted barley may be treated with smoke, which imparts a distinctly smokey taste onto the finished whiskey. It may be aged in a variety of barrels, to include Oak, Oloroso Sherry, and used Bourbon barrels. To be considered a scotch, the whiskey must be aged for at least three years in Scotland. Most companies, however, will choose to age their product for 5, 10, 12, 15, or upwards of 20 years in various casks before selling a finished product. The longer the age, the smoother and more refined the taste. Many distillers will choose to blend whiskeys for a product which may have a taste profile greater than the sum of its parts.</p>
-                        <br />
-
-                        <h2 class="homeh3">Irish Whiskey</h2>
-                        <br />
-                        <p>Insert Irish whiskey data</p>
-                        <br />
-
-                        <h2 class="homeh3">Canadian Whiskey</h2>
-                        <br />
-                        <p>Insert Irish whiskey data</p>
-                        <br />
-
-                        <h2 class="homeh3">Japanese Whiskey</h2>
-                        <br />
-                        <p>Insert Irish whiskey data</p>
-                        <br />
 
                         <dl className="accordion">
-                            <dt>Bourbon <div></div></dt>
+
+
+                            <dt>American Whiskey <div></div></dt>
                             <dd>
                                 <div className="inner">
-                                  
-                    
-                              <p>Bourbon is a distinctly American whiskey hailing from the American South; particularly with strong origins in Kentucky. In order to be formally recognized as a bourbon, a whiskey must be made from a mash being composed of at least 51 percent corn. Barrels must be new charred oak. This combination of mash and barrel requirements creates a whiskey which is sweeter on the palette, often with strong tastes of vanilla, caramel, spices and fruit.</p>
-        
+
+
+                                    <dt>Bourbon <div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>Bourbon is a distinctly American whiskey hailing from the American South; particularly with strong origins in Kentucky. In order to be formally recognized as a bourbon, a whiskey must be made from a mash being composed of at least 51 percent corn. Barrels must be new charred oak. This combination of mash and barrel requirements creates a whiskey which is sweeter on the palette, often with strong tastes of vanilla, caramel, spices and fruit.</p>
+
+                                        </div>
+                                    </dd>   
+
+                                    <dt>Tenessee Whiskey <div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd> 
+
+                                    <dt>Wheat Whiskey <div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd> 
+
+
+                                    <dt>Rye <div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd> 
+
+                                    <dt>Moonshine<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd> 
+
                                 </div>
                             </dd>
-                     
+
+
+
+                            <br />
                             <dt>Scotch <div></div></dt>
                                 <dd>
                                     <div className="inner">
                                     <p>Scotch is a product of Scotland. The entire country is divided into regions which produce their own defining tasting notes. A scotch must be made of no more than malted barley and water, with optional cereal grains. The malted barley may be treated with smoke, which imparts a distinctlysmokey taste onto the finished whiskey. It may be aged in a variety of barrels, to include Oak, Oloroso Sherry, and used Bourbon barrels. To be considered a scotch, the whiskey must be aged for at least three years in Scotland. Most companies, however, will choose to age their product for 5, 10, 12, 15, or upwards of 20 years in various casks before selling a finished product. The longer the age, the smoother and more refined the taste. Many distillers will choose to blend whiskeys for a product which may have a taste profile greater than the sum of its parts.</p>
+
+
+                                    <dt>Highland<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
+
+
+                                    <dt>Lowland<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
+
+                                    <dt>Island<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
+
+                                    <dt>Islay<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
+
+                                    <dt>Speyside<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
+
+                                    <dt>Campbelltown<div></div></dt>
+                                    <dd>
+                                        <div className="inner">
+
+
+                                            <p>whisky info.</p>
+
+                                        </div>
+                                    </dd>
                                     </div>
-                                </dd>
-          
+                            </dd>
+
+                            <br />
+                            <dt>Irish Whiskey <div></div></dt>
+                            <dd>
+                                <div className="inner">
+
+
+                                    <p>Irish whiskey info</p>
+
+                                </div>
+                            </dd>
+                            <br />
+                            <dt>Canadian Whiskey <div></div></dt>
+                            <dd>
+                                <div className="inner">
+
+
+                                    <p>Irish whiskey info</p>
+
+                                </div>
+                            </dd>
+                            <br />
+                            <dt>Japanese Whiskey <div></div></dt>
+                            <dd>
+                                <div className="inner">
+
+
+                                    <p>Irish whiskey info</p>
+
+                                </div>
+                            </dd>
+
                             <br />
                             <br />
                             <br />
