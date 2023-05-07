@@ -1,5 +1,6 @@
 ﻿const Whiskeys = [
     {
+        id: 1,
         name: "Laphroaig",
         distiller: "Laphroaig",
         age: "1",
@@ -11,6 +12,7 @@
         image: 'https://media.istockphoto.com/id/504430224/photo/jack-daniels-served-with-ice-ball.jpg?s=612x612&w=0&k=20&c=wS0iLXZ3Zpx50ZyimNyQbU6Eunqj89pTRXTu-OGLwW8='
     },
     {
+        id: 2,
         name: "Talisker Single malt",
         distiller: "Talisker",
         age: "1",
@@ -22,6 +24,7 @@
         image: 'https://media.istockphoto.com/id/496314094/photo/bottle-of-jim-beam-bourbon.jpg?s=612x612&w=0&k=20&c=7jV6ztb-84qj5nclaE4fmNdr0REegK_tQGwJxsur60U='
     },
     {
+        id: 3,
         name: "Elijah Craig Small Batch",
         distiller: "Willett",
         age: "1",
@@ -33,6 +36,7 @@
         image: 'https://t3.ftcdn.net/jpg/04/88/53/86/360_F_488538681_Az9ns6xhwTAvsmHyw8TIJqN4Ep0CtFSl.jpg'
     },
     {
+        id: 4,
         name: "Johnny Drum",
         distiller: "Willett",
         age: "3",
@@ -44,6 +48,7 @@
         image: 'https://thumbs.dreamstime.com/b/poznan-pol-mar-bottle-wild-turkey-brand-kentucky-straight-bourbon-whiskey-produced-austin-nichols-division-116554687.jpg'
     },
     {
+        id: 5,
         name: "Blanton’s",
         distiller: "Blanton’s",
         age: "3",
@@ -55,6 +60,7 @@
         image: 'https://st3.depositphotos.com/1063437/34691/i/600/depositphotos_346918778-stock-photo-poznan-pol-jan-2020-bottle.jpg'
     },
     {
+        id: 6,
         name: "Loch Lomond 12 Year",
         distiller: "Loch Lomond",
         age: "12",

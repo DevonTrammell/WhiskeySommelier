@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import '../custom.css';
+import { DataCard } from './DataCard';
+import Whiskeys from '../StaticWhiskeyData';
+import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
+import { WhiskeyDataDisplay } from './WhiskeyDataDisplay';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -13,7 +18,7 @@ export class Home extends Component {
         this.sortDataByFilter = this.sortDataByFilter.bind(this)
     }
     getAllData() {
-        fetch("https://localhost:44373/api/bottles")
+        fetch("https://localhost:5001/api/bottles")
             .then(res => res.json())
             .then(
                 (whiskeys) => {
@@ -37,8 +42,11 @@ export class Home extends Component {
 
         this.setState({ whiskeys: filteredWhiskeys });
     }
+
    
     render() {
+
+
         return (
             <div class="mainhome">
                 <div class="grid-container">
@@ -70,6 +78,11 @@ export class Home extends Component {
                     <div class="grid-item grid-item-4">
                     </div>
                     <div class="grid-item grid-item-5">
+                        <h7>Featured Whiskey of the Week:</h7>
+                        <DisplayData id={1} />
+
+
+
                     </div>
                     <div class="grid-item grid-item-6">
                     </div>
@@ -83,4 +96,20 @@ export class Home extends Component {
             </div>
         );
     }
+}
+function DisplayData({ id }) {
+    const item = Whiskeys.find(item => item.id === id);
+
+    if (!item) {
+        return <p>Item not found</p>;
+    }
+    return (
+        <div>
+            <h2>{item.name}</h2>
+            <h3>{item.type}</h3>
+            {item.image && (
+                <img src={item.image} alt={item.name} />
+            ) }
+        </div>
+    )
 }
