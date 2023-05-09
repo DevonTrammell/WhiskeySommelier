@@ -67,19 +67,13 @@ export class Home extends Component {
                     </div>
                    
                     <div class="grid-item grid-item-3">
-                        <div class="homep2">
-                            <p2>Stay tuned for updates to the site!</p2>
-                        </div>
-                        <ul1>
-                            <li>Search for your favorite whiskey</li>
-                            <li>Detailed flavor analysis</li>
-                        </ul1>
                     </div>
                     <div class="grid-item grid-item-4">
                     </div>
                     <div class="grid-item grid-item-5">
-                        <h7>Featured Whiskey of the Week:</h7>
-                        <DisplayData id={1} />
+                        <h7>&#x2022;Featured Whiskey of the Week:</h7>
+                        <DisplayData id={1} />                        
+                        <p>Head on over to the <a href="/tastingnotes">Tasting Notes</a> page to get a more detailed look at this whiskey, and many others!</p>
 
 
 
@@ -105,8 +99,8 @@ function DisplayData({ id }) {
     }
     return (
         <div>
-            <h2>{item.name}</h2>
-            <h3>{item.type}</h3>
+            <h2>{item.name}, distilled by {item.distiller}</h2>
+            <h3>Whiskey Type: {item.type}</h3>
             {item.image && (
                 <img src={item.image} alt={item.name} />
             ) }

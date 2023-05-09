@@ -177,18 +177,19 @@
     padding-top: 2.2em;
 }
 .grid-item-3 {
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    padding-left: 1em;
-    padding-top: 2.2em;
-    background-color: rgba(100, 100, 100, 0.5);
+
 }
 .grid-item-4{
     
 }
-.grid-item-5{
-    margin: -20px;
+.grid-item-5 {
+    /*margin: -20px;*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding-left: 2em;
+    padding-top: 1em;
+    background-color: rgba(100, 100, 100, 0.5);
 }
 .grid-item-6{
 
@@ -369,5 +370,12 @@ a:hover{
     top: 50%;
     transform: translateY(-50%);
 }
-
-
+h7{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 22px;
+}
