@@ -21,7 +21,8 @@ export class TastingNotes extends Component {
         this.changeSearchTerm = this.changeSearchTerm.bind(this);
         this.dynamicSearch = this.dynamicSearch.bind(this);
         this.getAllData = this.getAllData.bind(this);
-       /* this.filterFunction =  this.fliterFunction.bind(this);*/
+
+
     }
 
     changeSearchTerm = (e) => {
@@ -48,8 +49,12 @@ export class TastingNotes extends Component {
             )
     }
 
-    filerFunction() {
+ 
+    
 
+    componentDidMount() {
+        this.getAllData()
+    /*this.filterFunction()*/
         const inputField = document.querySelector('.chosen-value');
         const dropdown = document.querySelector('.value-list');
         const dropdownArray = [...document.querySelectorAll('li')];
@@ -104,7 +109,7 @@ export class TastingNotes extends Component {
         });
 
         inputField.addEventListener('blur', () => {
-            inputField.placeholder = 'Select state';
+            inputField.placeholder = 'Select cask';
             dropdown.classList.remove('open');
         });
 
@@ -115,15 +120,6 @@ export class TastingNotes extends Component {
                 dropdown.classList.remove('open');
             }
         });
-
-
-    }
-
-    
-
-    componentDidMount() {
-        this.getAllData()
-        /*this.filterFunction()*/
 }
     
 
@@ -172,18 +168,20 @@ export class TastingNotes extends Component {
        
                       <input class="chosen-value" type="text" value="" placeholder="Type to filter"></input>
                         <ul class="value-list">
-                            <li>Alabama</li>
-                            { /*<li>Alaska</li>
-                            <li>Arizona</li>
-                            <li>Arkansas</li>
-                            <li>California</li>
-                            <li>Colorado</li>
-                            <li>Connecticut</li>
-                            <li>Delaware</li>
-                            <li>Florida</li>
-                            <li>Georgia</li>
-                            <li>Hawaii</li>
-                            <li>Idaho</li>*/}
+                            <li>American Oak</li>
+                            <li>Barbadian Rum</li>
+                            <li>Bourbon</li>
+                            <li>Charred</li>
+                            <li>Cognac</li>
+                            <li>European</li>
+                            <li>Ex-bourbon</li>
+                            <li>Jamaican Rum</li>
+                            <li>Recharred</li>
+                            <li>Refill</li>
+                            <li>Sherry Oak</li>
+                            <li>Oak</li>
+                            <li>White Oak</li>
+                      
               
                         </ul>
                     </form>

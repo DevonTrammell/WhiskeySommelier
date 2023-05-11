@@ -98,7 +98,7 @@
 .value-list li {
         position: relative;
         height: 4rem;
-        background-color: #FAFCFD;
+        background-color: black;
         padding: 1rem;
         font-size: 1.1rem;
         display: flex;
@@ -109,7 +109,7 @@
     }
 
 .value-list li:hover {
-            background-color: #FF908B;
+            background-color: goldenrod;
         }
 
 .value-list li.closed {
