@@ -5,6 +5,7 @@ import Whiskeys from '../StaticWhiskeyData';
 import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
 import SearchBarStyle from '../SearchBar.css';
 import { WhiskeyDataDisplay } from './WhiskeyDataDisplay';
+import FilterStyle from '../Filter.css';
 
 export class TastingNotes extends Component {
     static displayName = TastingNotes.name;
@@ -20,6 +21,7 @@ export class TastingNotes extends Component {
         this.changeSearchTerm = this.changeSearchTerm.bind(this);
         this.dynamicSearch = this.dynamicSearch.bind(this);
         this.getAllData = this.getAllData.bind(this);
+       /* this.filterFunction =  this.fliterFunction.bind(this);*/
     }
 
     changeSearchTerm = (e) => {
@@ -46,9 +48,84 @@ export class TastingNotes extends Component {
             )
     }
 
+    filerFunction() {
+
+        const inputField = document.querySelector('.chosen-value');
+        const dropdown = document.querySelector('.value-list');
+        const dropdownArray = [...document.querySelectorAll('li')];
+        console.log(typeof dropdownArray);
+        dropdown.classList.add('open');
+        inputField.focus(); // Demo purposes only
+        let valueArray = [];
+        dropdownArray.forEach(item => {
+            valueArray.push(item.textContent);
+        });
+
+        const closeDropdown = () => {
+            dropdown.classList.remove('open');
+        };
+
+        inputField.addEventListener('input', () => {
+            dropdown.classList.add('open');
+            let inputValue = inputField.value.toLowerCase();
+            let valueSubstring;
+            if (inputValue.length > 0) {
+                for (let j = 0; j < valueArray.length; j++) {
+                    if (window.CP.shouldStopExecution(0)) break;
+                    if (!(inputValue.substring(0, inputValue.length) === valueArray[j].substring(0, inputValue.length).toLowerCase())) {
+                        dropdownArray[j].classList.add('closed');
+                    } else {
+                        dropdownArray[j].classList.remove('closed');
+                    }
+                } window.CP.exitedLoop(0);
+            } else {
+                for (let i = 0; i < dropdownArray.length; i++) {
+                    if (window.CP.shouldStopExecution(1)) break;
+                    dropdownArray[i].classList.remove('closed');
+                } window.CP.exitedLoop(1);
+            }
+        });
+
+        dropdownArray.forEach(item => {
+            item.addEventListener('click', evt => {
+                inputField.value = item.textContent;
+                dropdownArray.forEach(dropdown => {
+                    dropdown.classList.add('closed');
+                });
+            });
+        });
+
+        inputField.addEventListener('focus', () => {
+            inputField.placeholder = 'Type to filter';
+            dropdown.classList.add('open');
+            dropdownArray.forEach(dropdown => {
+                dropdown.classList.remove('closed');
+            });
+        });
+
+        inputField.addEventListener('blur', () => {
+            inputField.placeholder = 'Select state';
+            dropdown.classList.remove('open');
+        });
+
+        document.addEventListener('click', evt => {
+            const isDropdown = dropdown.contains(evt.target);
+            const isInput = inputField.contains(evt.target);
+            if (!isDropdown && !isInput) {
+                dropdown.classList.remove('open');
+            }
+        });
+
+
+    }
+
+    
+
     componentDidMount() {
         this.getAllData()
-    }
+        /*this.filterFunction()*/
+}
+    
 
     render() {
         let whiskeys = this.dynamicSearch();
@@ -86,7 +163,32 @@ export class TastingNotes extends Component {
                         </form>
                 
                       </div>
-                   </div>
+                </div>
+
+            
+                <div class="filter">
+                    <h7>Filter </h7>
+                    <form className="filterForm">
+       
+                      <input class="chosen-value" type="text" value="" placeholder="Type to filter"></input>
+                        <ul class="value-list">
+                            <li>Alabama</li>
+                            { /*<li>Alaska</li>
+                            <li>Arizona</li>
+                            <li>Arkansas</li>
+                            <li>California</li>
+                            <li>Colorado</li>
+                            <li>Connecticut</li>
+                            <li>Delaware</li>
+                            <li>Florida</li>
+                            <li>Georgia</li>
+                            <li>Hawaii</li>
+                            <li>Idaho</li>*/}
+              
+                        </ul>
+                    </form>
+                </div>
+             
 
                 <div className='card-container'>
                     {whiskeys.map((e) => {
