@@ -9,7 +9,7 @@
         palette: "Surprising sweetness with hints of salt and layers of peatiness.",
         finish: "Lingering",
         type: "Scotch",
-        image: 'https://media.istockphoto.com/id/504430224/photo/jack-daniels-served-with-ice-ball.jpg?s=612x612&w=0&k=20&c=wS0iLXZ3Zpx50ZyimNyQbU6Eunqj89pTRXTu-OGLwW8='
+        image: 'https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hc4/h4f/12202508845086.png'
     },
     {
         id: 2,
