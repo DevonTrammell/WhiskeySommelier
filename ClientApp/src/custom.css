@@ -102,3 +102,15 @@ code {
 .card-body {
     padding: 1.2em;
 }
+
+.info_section {
+    width: 70%;
+}
+
+.image_section {
+    width: 70%;
+}
+
+.data_card_main {
+    display: flex;
+}
