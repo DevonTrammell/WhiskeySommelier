@@ -10,13 +10,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     align-items: center;
     justify-content: flex-start;
     font-family: 'Poiret One', serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: 4px;
+    /*z-index:3;*/
 }
 
 
@@ -30,8 +31,8 @@
 
 .filterForm {
     position: relative;
-    width: 18rem;
-    margin-top: 8vh;
+    width: 14rem;
+    margin-top: 4vh;
 }
     
 .chosen-value,
@@ -50,7 +51,7 @@
     height: 4rem;
     font-size: 1.1rem;
     padding: 1rem;
-    background-color: #FAFCFD;
+    background-color: darkgoldenrod;
     border: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -60,7 +61,6 @@
     }
 
 .chosen-value:hover {
-        /*background-color: #FF908B;*/
         background-color:goldenrod;
 
         cursor: pointer;

@@ -35,6 +35,11 @@ export class TastingNotes extends Component {
                 whiskey.barrel.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) ||
                 whiskey.type.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
     }
+   /* dynamicSearch2 = () => {
+        return this.state.whiskeys.filter(whiskey =>
+         
+            whiskey.type.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
+    }*/
 
     getAllData() {
         fetch("https://localhost:5001/api/bottles")
@@ -54,7 +59,7 @@ export class TastingNotes extends Component {
 
     componentDidMount() {
         this.getAllData()
-    /*this.filterFunction()*/
+        /*this.filterFunction()*/
         const inputField = document.querySelector('.chosen-value');
         const dropdown = document.querySelector('.value-list');
         const dropdownArray = [...document.querySelectorAll('li')];
@@ -109,13 +114,14 @@ export class TastingNotes extends Component {
         });
 
         inputField.addEventListener('blur', () => {
-            inputField.placeholder = 'Select cask';
+            inputField.placeholder = 'Select the type';
             dropdown.classList.remove('open');
         });
 
         document.addEventListener('click', evt => {
             const isDropdown = dropdown.contains(evt.target);
             const isInput = inputField.contains(evt.target);
+           
             if (!isDropdown && !isInput) {
                 dropdown.classList.remove('open');
             }
@@ -156,6 +162,7 @@ export class TastingNotes extends Component {
                             <input type="text" placeholder="Search" value={this.state.searchTerm} onChange={this.changeSearchTerm}></input>
                             <div></div>
                             <span></span>
+                    
                         </form>
                 
                       </div>
@@ -165,24 +172,12 @@ export class TastingNotes extends Component {
                 <div class="filter">
                     <h7>Filter </h7>
                     <form className="filterForm">
-       
-                      <input class="chosen-value" type="text" value="" placeholder="Type to filter"></input>
+                        <input class="chosen-value" type="text" placeholder="Type to filter" value={this.state.searchTerm} onChange={this.changeSearchTerm}></input>
                         <ul class="value-list">
-                            <li>American Oak</li>
-                            <li>Barbadian Rum</li>
-                            <li>Bourbon</li>
-                            <li>Charred</li>
-                            <li>Cognac</li>
-                            <li>European</li>
-                            <li>Ex-bourbon</li>
-                            <li>Jamaican Rum</li>
-                            <li>Recharred</li>
-                            <li>Refill</li>
-                            <li>Sherry Oak</li>
-                            <li>Oak</li>
-                            <li>White Oak</li>
+                            <li >Bourbon</li>
+                            <li >Scotch</li>
+                            <li >Rum</li>
                       
-              
                         </ul>
                     </form>
                 </div>
