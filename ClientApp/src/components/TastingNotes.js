@@ -116,9 +116,12 @@ export class TastingNotes extends Component {
                         <select id="filterAge" value
                             ={this.state.filterAge} onChange={this.changeFilterAge}>
                             <option value="">All</option>
+                            <option value="1">1 year</option>
+                            <option value="3">3 years</option>
+                            <option value="5">5 years</option>
+                            <option value="7">7 years</option>
+                            <option value="10">10 years</option>
                             <option value="12">12 years</option>
-                            <option value="18">18 years</option>
-                            <option value="25">25 years</option>
                         </select>
                     </div>
                     <div className="filter">
@@ -128,7 +131,6 @@ export class TastingNotes extends Component {
                             <option value="Bourbon">Bourbon</option>
                             <option value="Scotch">Scotch</option>
                             <option value="Rye">Rye</option>
-                            <option value="Single Malt">Single Malt</option>
 
                         </select>
                     </div>
