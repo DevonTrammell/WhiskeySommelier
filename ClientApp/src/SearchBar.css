@@ -136,3 +136,91 @@
 .form-con.search span:after {
     transform: translateX(-50%) rotate(-45deg);
         }
+
+
+/*filter*/
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+}
+
+.filter {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .filter label {
+        margin-right: 10px;
+        font-size: 24px;
+        color: #b5a642;
+        min-width: 50px;
+    }
+
+    .filter select {
+        padding: 8px 12px;
+        border: 1px solid #b5a642;
+        border-radius:4px;
+        font-size: 16px;
+        color: goldenrod;
+        background-color: #191919;
+        transition: border-color 0.3s ease;
+        flex-grow: 1;
+    }
+
+        
+
+        .filter select:focus {
+            outline: none;
+            border-color: goldenrod;
+            box-shadow: 0 0 0 2px #b5a642;
+        }
+
+        .filter select option {
+            font-size: 14px;
+            color: goldenrod;
+        }
+
+            .filter select option:first-child {
+                color: #888;
+            }
+
+        .filter select:hover {
+            cursor: pointer;
+            border-color: #b5a642;
+            color: goldenrod;
+        }
+
+        .filter select:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+            .filter select:disabled:hover {
+                border-color: #ccc;
+                cursor: not-allowed;
+            }
+
+.reset-button {
+    background-color: #191919;
+    color: goldenrod;
+    border: 1px solid #b5a642;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .reset-button:hover {
+        background-color: #191919;
+    }
+
+    .reset-button:focus {
+        outline: none;
+    }
+
+
