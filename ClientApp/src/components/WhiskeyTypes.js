@@ -46,7 +46,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Tennessee whiskey is a descendant of bourbon. As the name indicates, it is a product of Tennessee, USA. Its defining charactersitic is that the whiskey is filtered though sugar maple charcoal before the aging process. This filtering results in a smoother, sweeter taste.</p>
 
                                         </div>
                                     </dd> 
@@ -56,7 +56,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Wheat whiskey has a mash bill consitingly mostly of wheat grains, and has a more balanced tasting profile in contrast to the bourbon and Tennessee styles.</p>
 
                                         </div>
                                     </dd> 
@@ -67,7 +67,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Rye whiskey is defined by its mash bill containing a minimum of 51% rye. The aging process is the same as Bourbon. Most ryes have a lighter, more bitter taste with notes of pepper</p>
 
                                         </div>
                                     </dd> 
@@ -77,7 +77,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Moonshine is an unaged whiskey. The product goes from the still straight to the bottle and can be made with a variety of mash bills, with corn being a popular ingredient. The average concentration of alcohol by volume is stronger than most other types of whiskey, and is a defining trait of the type. The other is the colorless nature of the whiskey, as there has been no barrel to impart additional color.</p>
 
                                         </div>
                                     </dd> 
@@ -130,7 +130,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>This is one of the most intense variants of Scotch whiskey. Its main characteristic is its heavy use of peat smoke</p>
 
                                         </div>
                                     </dd>
@@ -163,7 +163,7 @@ export class WhiskeyTypes extends Component {
                                 <div className="inner">
 
 
-                                    <p>Irish whiskey info</p>
+                                    <p>Irish whiskey is similar to Scotch due to proximity. The largest difference is the general lack of smoke in the taste due to a different process for malting the barley. The end result for most Irish whiskey is a more clear taste of the grains being used.</p>
 
                                 </div>
                             </dd>
@@ -173,7 +173,7 @@ export class WhiskeyTypes extends Component {
                                 <div className="inner">
 
 
-                                    <p>Irish whiskey info</p>
+                                    <p>Canadian whiskey has similarities to American whiskey due to proximity. The rules for defining it are less strict but there is a regular component of rye in the mash bill, albeit a smaller amount then American Rye whiskey. This relaxed standard produces a variety of tastes and characters. </p>
 
                                 </div>
                             </dd>
@@ -183,7 +183,7 @@ export class WhiskeyTypes extends Component {
                                 <div className="inner">
 
 
-                                    <p>Irish whiskey info</p>
+                                    <p>Japanese whiskey takes after the Scottish style of whiskeymaking. These tend to be lighter in character than their Scottish counterparts.</p>
 
                                 </div>
                             </dd>
