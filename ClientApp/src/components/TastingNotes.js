@@ -128,7 +128,7 @@ export class TastingNotes extends Component {
                             <option value="Bourbon">Bourbon</option>
                             <option value="Scotch">Scotch</option>
                             <option value="Rye">Rye</option>
-                            <option value="Rum">Rum</option>
+                            <option value="Single Malt">Single Malt</option>
 
                         </select>
                     </div>

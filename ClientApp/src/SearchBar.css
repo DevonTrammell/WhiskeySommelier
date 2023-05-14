@@ -145,7 +145,6 @@
     align-items: center;
     margin-bottom: 10px;
     justify-content: center;
-    
 }
 
 .filter {
@@ -164,7 +163,7 @@
     .filter select {
         padding: 8px 12px;
         border: 1px solid #b5a642;
-        border-radius:4px;
+        border-radius: 4px;
         font-size: 16px;
         color: goldenrod;
         background-color: #191919;
@@ -172,7 +171,7 @@
         flex-grow: 1;
     }
 
-        
+
 
         .filter select:focus {
             outline: none;
@@ -209,7 +208,8 @@
     background-color: #191919;
     color: goldenrod;
     border: 1px solid #b5a642;
-    padding: 8px 16px;
+    padding: 8px 12px;
+    font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -222,5 +222,8 @@
     .reset-button:focus {
         outline: none;
     }
+
+
+
 
 
