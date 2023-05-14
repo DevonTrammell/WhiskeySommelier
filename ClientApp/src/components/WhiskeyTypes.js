@@ -99,7 +99,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>The Highland region covers most of nothern Scotland, and is the largest and highest producing region.</p>
+                                            <p>The Highland region covers most of nothern Scotland, and is the largest and highest producing region. The whiskeys produced here cover almost every expression of taste and body.</p>
 
                                         </div>
                                     </dd>
@@ -110,7 +110,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>The Lowland region is the southernmost part of Scotland. Scotches from here have a softer and smoother feeling. In terms of flavor, these whiskeys boast delicate notes of spices and sweets.</p>
 
                                         </div>
                                     </dd>
@@ -120,7 +120,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Some groups recognize the islands of the North West Scotland as their own region, while others group them with the Highland region. The whiskeys from this region have a wide array of characteristics, and they can be expected to have similar character as the Highlands.</p>
 
                                         </div>
                                     </dd>
@@ -140,7 +140,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>Speyside is a densley populated whiskey region along the River Spey. Speysides regularly come with lighter notes of peat smoke and heavier, fuller expressions of fruit.</p>
 
                                         </div>
                                     </dd>
@@ -150,7 +150,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>The Campbelltown region is a small peninusla in southern Scotland. The flavors from this area are widely varied.</p>
 
                                         </div>
                                     </dd>
