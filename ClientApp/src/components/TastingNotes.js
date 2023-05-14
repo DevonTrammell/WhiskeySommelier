@@ -13,24 +13,45 @@ export class TastingNotes extends Component {
         super();
 
         this.state = {
-            whiskeys: [], 
+            whiskeys: [],
             searchTerm: '',
+            filterCask: '',
+            filterAge: '',
+            filterType: ''
         };
 
         this.changeSearchTerm = this.changeSearchTerm.bind(this);
+        this.changeFilterCask = this.changeFilterCask.bind(this);
+        this.changeFilterAge = this.changeFilterAge.bind(this);
+        this.changeFilterType = this.changeFilterType.bind(this);
         this.dynamicSearch = this.dynamicSearch.bind(this);
         this.getAllData = this.getAllData.bind(this);
+        this.resetFilters = this.resetFilters.bind(this);
     }
 
     changeSearchTerm = (e) => {
-        this.setState({searchTerm: e.target.value})
+        this.setState({ searchTerm: e.target.value });
+    }
+
+    changeFilterCask = (e) => {
+        this.setState({ filterCask: e.target.value });
+    }
+
+    changeFilterAge = (e) => {
+        this.setState({ filterAge: e.target.value });
+    }
+
+    changeFilterType = (e) => {
+        this.setState({ filterType: e.target.value });
     }
 
     dynamicSearch = () => {
         return this.state.whiskeys.filter(whiskey =>
-                whiskey.name.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) ||
-                whiskey.barrel.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) ||
-                whiskey.type.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()));
+            whiskey.name.toLowerCase().includes(this.state.searchTerm.toLowerCase().trim()) &&
+            (this.state.filterCask === '' || whiskey.barrel.toLowerCase() === this.state.filterCask.toLowerCase().trim()) &&
+            (this.state.filterAge === '' || whiskey.age === parseInt(this.state.filterAge)) &&
+            (this.state.filterType === '' || whiskey.type.toLowerCase() === this.state.filterType.toLowerCase().trim())
+        );
     }
 
     getAllData() {
@@ -50,6 +71,14 @@ export class TastingNotes extends Component {
         this.getAllData()
     }
 
+    resetFilters() {
+        this.setState({
+            filterCask: '',
+            filterAge: '',
+            filterType: ''
+        });
+    }
+
     render() {
         let whiskeys = this.dynamicSearch();
 
@@ -62,31 +91,60 @@ export class TastingNotes extends Component {
         });
 
         return (
-
-            //<Card>
-            //    <CardLink href='/WhiskeyDetails'>
-            //        <CardBody>
-            //            <CardImg src= "https://cdn.shopify.com/s/files/1/0576/8085/5207/products/12-year-old-single-bottle_2793b54a-a92f-40ce-9376-7a4c3de4949e_5000x.jpg?v=1648466684"/>                    
-            //            <p>
-            //            </p>
-            //            <h5 class="homeh5">Loch Lomond</h5>                    
-            //        </CardBody>
-            //    </CardLink>
-            //</Card>
-
             <div className="layout">
                 <header className="tasting-notes-header">Tasting Notes</header>
-          
-                 <div class="wrapper">
-                    <div class="form-con search">
+
+                <div className="filter-container">
+                    <div className="filter">
+                        <label htmlFor="filterCask">Cask:</label>
+                        <select id="filterCask" value={this.state.filterCask} onChange={this.changeFilterCask}>
+                            <option value="">All</option>
+                            <option value="Ex-bourbon">Ex-bourbon</option>
+                            <option value="Refill American and European Oak">Refill American and European Oak</option>
+                            <option value="Oak">Oak</option>
+                            <option value="American Oak">American Oak</option>
+                            <option value="Bourbon, Refill, and Recharred casks.">Bourbon, Refill, and Recharred casks.</option>
+                            <option value="Sherry Oak">Sherry Oak</option>
+                            <option value="Jamaican Rum, Barbadian Rum">Jamaican Rum, Barbadian Rum</option>
+                            <option value="Charred">Charred</option>
+                            <option value="Cognac Casks">Cognac Casks</option>
+                            <option value="CHarred American White Oak">Charred American White Oak</option>
+                        </select>
+                    </div>
+                    <div className="filter">
+                        <label htmlFor="filterAge">Age:</label>
+                        <select id="filterAge" value
+                            ={this.state.filterAge} onChange={this.changeFilterAge}>
+                            <option value="">All</option>
+                            <option value="1">1 year</option>
+                            <option value="3">3 years</option>
+                            <option value="5">5 years</option>
+                            <option value="7">7 years</option>
+                            <option value="10">10 years</option>
+                            <option value="12">12 years</option>
+                        </select>
+                    </div>
+                    <div className="filter">
+                        <label htmlFor="filterType">Type:</label>
+                        <select id="filterType" value={this.state.filterType} onChange={this.changeFilterType}>
+                            <option value="">All</option>
+                            <option value="Bourbon">Bourbon</option>
+                            <option value="Scotch">Scotch</option>
+                            <option value="Rye">Rye</option>
+
+                        </select>
+                    </div>
+                    <button className="reset-button" onClick={this.resetFilters}>Reset</button>
+                </div>
+                <div className="wrapper">
+                    <div className="form-con search">
                         <form className="searchForm">
                             <input type="text" placeholder="Search" value={this.state.searchTerm} onChange={this.changeSearchTerm}></input>
                             <div></div>
                             <span></span>
                         </form>
-                
-                      </div>
-                   </div>
+                    </div>
+                </div>
 
                 <div className='card-container'>
                     {whiskeys.map((e) => {
