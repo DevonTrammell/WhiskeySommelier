@@ -99,7 +99,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>whisky info.</p>
+                                            <p>The Highland region covers most of nothern Scotland, and is the largest and highest producing region.</p>
 
                                         </div>
                                     </dd>
@@ -130,7 +130,7 @@ export class WhiskeyTypes extends Component {
                                         <div className="inner">
 
 
-                                            <p>This is one of the most intense variants of Scotch whiskey. Its main characteristic is its heavy use of peat smoke</p>
+                                            <p>This is one of the most intense variants of Scotch whiskey. Its main characteristic is its heavy use of peat smoke atop fruit flavors. This is a small region with few, but notable distilleries.</p>
 
                                         </div>
                                     </dd>
