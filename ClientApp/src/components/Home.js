@@ -4,6 +4,7 @@ import { DataCard } from './DataCard';
 import Whiskeys from '../StaticWhiskeyData';
 import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
 import { WhiskeyDataDisplay } from './WhiskeyDataDisplay';
+import slides from '../slideshow';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -67,6 +68,15 @@ export class Home extends Component {
                     </div>
                    
                     <div class="grid-item grid-item-3">
+                        <div id="slideshow">
+                            <div class="slide">
+                            </div>
+                            <div class="slide">
+                            </div>
+                            <div class="slide">
+                            </div>
+
+                        </div>
                     </div>
                     <div class="grid-item grid-item-4">
                     </div>
@@ -89,8 +99,10 @@ export class Home extends Component {
                 </div>
             </div>
         );
+        
     }
 }
+
 function DisplayData({ id }) {
     const item = Whiskeys.find(item => item.id === id);
 
