@@ -190,20 +190,9 @@
     border-radius: 25px;
     padding-left: 2em;
     padding-top: 1em;
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: black;
 }
-.grid-item-6{
 
-}
-.grid-item-7 {
-
-}
-.grid-item-8 {
-
-}
-.grid-item-9 {
-
-}
 table{
     border: 2px solid;
     border-radius: 5px;
