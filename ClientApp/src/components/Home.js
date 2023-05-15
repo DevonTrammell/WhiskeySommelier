@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import '../custom.css';
+import { DataCard } from './DataCard';
+import Whiskeys from '../StaticWhiskeyData';
+import { Card, CardBody, CardImg, CardLink, CardText, CardTitle, CardSubtitle } from 'reactstrap';
+import { WhiskeyDataDisplay } from './WhiskeyDataDisplay';
+import slides from '../slideshow';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -13,7 +19,7 @@ export class Home extends Component {
         this.sortDataByFilter = this.sortDataByFilter.bind(this)
     }
     getAllData() {
-        fetch("https://localhost:44373/api/bottles")
+        fetch("https://localhost:5001/api/bottles")
             .then(res => res.json())
             .then(
                 (whiskeys) => {
@@ -37,8 +43,11 @@ export class Home extends Component {
 
         this.setState({ whiskeys: filteredWhiskeys });
     }
+
    
     render() {
+
+
         return (
             <div class="mainhome">
                 <div class="grid-container">
@@ -59,17 +68,29 @@ export class Home extends Component {
                     </div>
                    
                     <div class="grid-item grid-item-3">
-                        <div class="homep2">
-                            <p2>Stay tuned for updates to the site!</p2>
+                        <div id="slideshow">
+                            <div class="slide">
+                            </div>
+                            <div class="slide">
+                            </div>
+                            <div class="slide">
+                            </div>
+
                         </div>
-                        <ul1>
-                            <li>Search for your favorite whiskey</li>
-                            <li>Detailed flavor analysis</li>
-                        </ul1>
                     </div>
                     <div class="grid-item grid-item-4">
                     </div>
                     <div class="grid-item grid-item-5">
+                        <h7>Featured Whiskey of the Week:</h7>
+                        <br/>
+                        <DisplayData id={1} />                        
+                        <br />
+                        <br />
+                        <br/>
+                        <p>Head on over to the <a href="/tastingnotes">Tasting Notes</a> page to get a more detailed look at this whiskey, and many others!</p>
+
+
+
                     </div>
                     <div class="grid-item grid-item-6">
                     </div>
@@ -82,5 +103,24 @@ export class Home extends Component {
                 </div>
             </div>
         );
+        
     }
+}
+
+function DisplayData({ id }) {
+    const item = Whiskeys.find(item => item.id === id);
+
+    if (!item) {
+        return <p>Item not found</p>;
+    }
+    return (
+        <div>
+            <br/>
+            <h2>{item.name}</h2>
+            
+            {item.image && (
+                <img src={item.image} alt={item.name} />
+            ) }
+        </div>
+    )
 }
