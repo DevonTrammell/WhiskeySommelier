@@ -44,8 +44,11 @@ export class AboutUs extends Component {
                     <br />
                 <p><b >
                     - The Whiskey Sommelier Team
-                    </b>
-                    </p>
+                        </b>
+
+                        </p>
+                        <p><b>Sommelier</b>
+                        </p>
                     </div>
                     </div>
             </div>
